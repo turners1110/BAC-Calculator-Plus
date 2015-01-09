@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Bar Stock (Bourbon/ Whisky)</key>
+	<string>43</string>
+	<key>Old Grand Dad (Bourbon/ Whisky)</key>
+	<string>45</string>
+	<key>Yukon Jack (Bourbon/ Whisky)</key>
+	<string>50</string>
+	<key>Wild Turkey (Bourbon/ Whisky)</key>
+	<string>50.5</string>
+	<key>Bar Stock (Rum)</key>
+	<string>40</string>
+	<key>Captain Morgan’s 151 (Rum)</key>
+	<string>75.5</string>
+	<key>Kahlua</key>
+	<string>27</string>
+	<key>Peach Schnapps</key>
+	<string>20</string>
+	<key>Peppermint Schnapps</key>
+	<string>30</string>
+	<key>Rumple Mize</key>
+	<string>50</string>
+	<key>Ouzo</key>
+	<string>46</string>
+	<key>Triple Sec</key>
+	<string>39</string>
+	<key>Everclear</key>
+	<string>95</string>
+	<key>Bar Stock (Gin)</key>
+	<string>40</string>
+	<key>Bombay (Gin)</key>
+	<string>43</string>
+	<key>Tangueray</key>
+	<string>47.5</string>
+	<key>Bar Stock (Vodka)</key>
+	<string>40</string>
+	<key>Bar Stock (Tequila)</key>
+	<string>40</string>
+</dict>
+</plist>

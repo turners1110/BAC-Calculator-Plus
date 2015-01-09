@@ -1,0 +1,23 @@
+//
+//  STFirstViewController.h
+//  BAC Calculator Plus
+//
+//  Created by Samuel Turner on 4/5/14.
+//  Copyright (c) 2014 Samuel Turner. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface STFirstViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *shotEntered;
+@property (weak, nonatomic) IBOutlet UITextField *wineEntered;
+@property (weak, nonatomic) IBOutlet UITextField *beerEntered;
+@property (weak, nonatomic) IBOutlet UITextField *timeEntered;
+@property (weak, nonatomic) IBOutlet UITextField *weightEntered;
+@property (weak, nonatomic) IBOutlet UILabel *BACLabel;
+- (IBAction)malePressed:(id)sender;
+- (IBAction)femalePressed:(id)sender;
+- (IBAction)hideKeyboard:(id)sender;
+
+@end
+

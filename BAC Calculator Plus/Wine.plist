@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Dry White</key>
+	<string>12.20</string>
+	<key>Red/Rose</key>
+	<string>12.5</string>
+	<key>Champaign</key>
+	<string>12.20</string>
+	<key>Mad Dog</key>
+	<string>14</string>
+	<key>Light Wine</key>
+	<string>7.4</string>
+	<key>Dessert Wine</key>
+	<string>18.8</string>
+</dict>
+</plist>

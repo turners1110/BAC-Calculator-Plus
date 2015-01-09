@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>1910 Rye Whisky</key>
+	<string>40</string>
+	<key>Absinthe</key>
+	<string>50</string>
+	<key>Absolut Vodka</key>
+	<string>40</string>
+	<key>Alcohol Inspired Refresher</key>
+	<string>4</string>
+	<key>Bacardi 151 Rum </key>
+	<string>75.5</string>
+	<key>Bacardi Gold Rum </key>
+	<string>40</string>
+	<key>Bacardi Light MojitoBacardi Light Mojito34.75</key>
+	<string>12.5</string>
+	<key>Bacardi Light Pina ColadaBacardi Light Pina Colada25.88</key>
+	<string>11.5</string>
+	<key>Bacardi Silver </key>
+	<string>5</string>
+	<key>Bacardi Silver Mojito</key>
+	<string>5</string>
+	<key>Bacardi Silver Peach</key>
+	<string>5</string>
+	<key>Baily&apos;s Irish Cream</key>
+	<string>17</string>
+	<key>Becherovka</key>
+	<string>38</string>
+	<key>Beefeater Gin</key>
+	<string>47</string>
+	<key>Bombay Sapphire Gin </key>
+	<string>47</string>
+	<key>Bowman&apos;s Vodka</key>
+	<string>40</string>
+	<key>Bushmills Irish Whiskey</key>
+	<string>40</string>
+	<key>Captain Morgan - Long Island Iced Tea</key>
+	<string>17</string>
+	<key>Captain Morgan - Private Stock 40%</key>
+	<string>40</string>
+	<key>Captain Morgan 100 Proof Rum</key>
+	<string>50</string>
+	<key>Captain Morgan Black Spiced Rum</key>
+	<string>47.3</string>
+	<key>Captain Morgan Original Spiced Rum </key>
+	<string>35</string>
+	<key>Chambord Black Raspberry Liqueur </key>
+	<string>16.5</string>
+	<key>Chambord Flavored Vodka </key>
+	<string>37.5</string>
+	<key>Chivas Regal Premium Scotch Whisky</key>
+	<string>40</string>
+	<key>Cointreau Triple Sec</key>
+	<string>40</string>
+	<key>Cosmopolitan </key>
+	<string>22.9</string>
+	<key>Courvoisier XO Cognac</key>
+	<string>40</string>
+	<key>Cragganmore Scotch Whisky</key>
+	<string>60.1</string>
+	<key>Creme de menthe</key>
+	<string>36</string>
+	<key>Crown Royal - Special Reserve </key>
+	<string>40</string>
+	<key>Dalwhinnie Scotch Whisky</key>
+	<string>57.8</string>
+	<key>Disaronno - Amaretto Di Saronno</key>
+	<string>28</string>
+	<key>Don Julio Blanco Tequila</key>
+	<string>40</string>
+	<key>E  AND  J Brandy VSOP</key>
+	<string>40</string>
+	<key>E AND J Brandy</key>
+	<string>40</string>
+	<key>E AND J Cognac</key>
+	<string>40</string>
+	<key>Everclear </key>
+	<string>95</string>
+	<key>Fireball Whisky</key>
+	<string>33</string>
+	<key>Fuzzy Navel</key>
+	<string>3.6</string>
+	<key>Gin and Tonic</key>
+	<string>10</string>
+	<key>Glenfiddich Scotch Whisky</key>
+	<string>40</string>
+	<key>Godiva - Chocolate Cream Liqueur</key>
+	<string>15</string>
+	<key>Goldschlager</key>
+	<string>43.5</string>
+	<key>Gordons - Dry Gin</key>
+	<string>40</string>
+	<key>Grahams 2007 Vintage Port</key>
+	<string>20</string>
+	<key>Grand Marnier Orange Liqueur</key>
+	<string>40</string>
+	<key>Grand Monarch</key>
+	<string>40</string>
+	<key>Grey Goose Vodka </key>
+	<string>40</string>
+	<key>Hakutsuru Draft Sake</key>
+	<string>14</string>
+	<key>Hakutsuru Premium Sake</key>
+	<string>15.5</string>
+	<key>Hakutsuru Superior Sake</key>
+	<string>14.5</string>
+	<key>Hendricks Gin</key>
+	<string>44</string>
+	<key>Hpnotiq</key>
+	<string>17</string>
+	<key>HRD Peach Schnapps</key>
+	<string>21</string>
+	<key>HRD Root Beer Schnapps</key>
+	<string>21</string>
+	<key>Jack and Coke </key>
+	<string>10</string>
+	<key>Jack Daniels Whiskey </key>
+	<string>40</string>
+	<key>Jager Bomb </key>
+	<string>8.75</string>
+	<key>Jagermeister </key>
+	<string>35</string>
+	<key>Jameson Irish Whiskey</key>
+	<string>40</string>
+	<key>Jeremiah Weed Bourbon</key>
+	<string>50</string>
+	<key>Jeremiah Weed Sweet Tea</key>
+	<string>35</string>
+	<key>Jim Beam Kentuckty Straight Bourbon Whiskey</key>
+	<string>40</string>
+	<key>Johnnie Walker - Red Label 43</key>
+	<string>43</string>
+	<key>Jose Cuervo - Golden Margarita Pre mixed</key>
+	<string>12.7</string>
+	<key>Jose Cuervo Especial (Gold) </key>
+	<string>40</string>
+	<key>Jose Cuervo Especial (Silver) </key>
+	<string>40</string>
+	<key>Jose Cuervo Light Margarita</key>
+	<string>9.95</string>
+	<key>Kahlua </key>
+	<string>20</string>
+	<key>Kamikaze</key>
+	<string>28.6</string>
+	<key>Ketel One Vodka </key>
+	<string>40</string>
+	<key>Knob Creek Bourbon</key>
+	<string>50</string>
+	<key>Limoncello</key>
+	<string>32</string>
+	<key>Long Island Iced Tea</key>
+	<string>23.8</string>
+	<key>Lucid Absinthe Superieure</key>
+	<string>62</string>
+	<key>Makers Mark </key>
+	<string>45.5</string>
+	<key>Malibu Rum </key>
+	<string>21</string>
+	<key>Margarita</key>
+	<string>10</string>
+	<key>Margarita </key>
+	<string>3.6</string>
+	<key>Martini </key>
+	<string>43.1</string>
+	<key>MARTINI  AND  ROSSI Extra Dry</key>
+	<string>18</string>
+	<key>Midori</key>
+	<string>20</string>
+	<key>Mike&apos;s &quot;The Classic Margarita&quot;13.86</key>
+	<string>5.5</string>
+	<key>Monarch 151 Rum</key>
+	<string>75.5</string>
+	<key>Monarch Brandy</key>
+	<string>40</string>
+	<key>Monarch Citron Vodka</key>
+	<string>35</string>
+	<key>Monarch Pineapple Rum</key>
+	<string>21</string>
+	<key>Myers Frozen Pina Colada</key>
+	<string>13</string>
+	<key>Myers Frozen Strawberry Daiquiri</key>
+	<string>13</string>
+	<key>Myers Original Dark Rum</key>
+	<string>40</string>
+	<key>Ozeki Sake (Regular Type)</key>
+	<string>16</string>
+	<key>Parrot Bay Caribbean Coconut Rum</key>
+	<string>20</string>
+	<key>Pastis pure</key>
+	<string>45</string>
+	<key>Patron Anejo Tequila </key>
+	<string>40</string>
+	<key>Patron Gran Patron Burdeos Anejo</key>
+	<string>40</string>
+	<key>Patron Silver Tequila </key>
+	<string>40</string>
+	<key>Pendleton Whisky</key>
+	<string>40</string>
+	<key>Pigs Eye P.B. High Gravity Ice Malt Liquour </key>
+	<string>10.2</string>
+	<key>Pina Colada </key>
+	<string>3.6</string>
+	<key>Pina Colada (blended)</key>
+	<string>10</string>
+	<key>Popov Vodka 100 proof</key>
+	<string>50</string>
+	<key>Popov Vodka 80 proof</key>
+	<string>40</string>
+	<key>Royal Gate Vodka 80 proofRoyal Gate Vodka 80 proof38.8</key>
+	<string>40</string>
+	<key>Rum and Coke </key>
+	<string>8.75</string>
+	<key>Rumple Minze - Peppermint</key>
+	<string>50</string>
+	<key>Sailor Jerry Spiced Navy Rum</key>
+	<string>46</string>
+	<key>Sambuca Romana</key>
+	<string>42</string>
+	<key>Screwdriver </key>
+	<string>13.3</string>
+	<key>Seagrams 7 </key>
+	<string>40</string>
+	<key>Sierra Nevada BigfootSierra Nevada Bigfoot31.68</key>
+	<string>9.6</string>
+	<key>Sinfire Cinnamon Whisky</key>
+	<string>39</string>
+	<key>Skinny Girl Margarita </key>
+	<string>12.7</string>
+	<key>Skinnygirl Bare Naked Vodka</key>
+	<string>30</string>
+	<key>Skinnygirl Cucumber Vodka</key>
+	<string>30</string>
+	<key>Skinnygirl Island Coconut Vodka</key>
+	<string>30</string>
+	<key>Skinnygirl Pina ColadaSkinnygirl Pina Colada26.47</key>
+	<string>9.95</string>
+	<key>Skinnygirl Tangerine Vodka</key>
+	<string>30</string>
+	<key>Skinnygirl White Peach Margarita</key>
+	<string>12.7</string>
+	<key>Smirnoff Ice</key>
+	<string>5</string>
+	<key>Smirnoff Sorbet Light Vodka (All Flavors) </key>
+	<string>30</string>
+	<key>Smirnoff Twist of Green Apple Vodka</key>
+	<string>35</string>
+	<key>Smirnoff Twist of Raspberry Vodka</key>
+	<string>35</string>
+	<key>Smirnoff Vodka Blue Label 100 Proof </key>
+	<string>50</string>
+	<key>Smirnoff Vodka Red Label 80 Proof </key>
+	<string>40</string>
+	<key>Smirnoff Vodka Silver Label 90 Proof</key>
+	<string>45.2</string>
+	<key>Southern Comfort (70 proof)</key>
+	<string>35</string>
+	<key>Stirrings Triple Sec</key>
+	<string>30</string>
+	<key>Stolichnaya Vodka</key>
+	<string>40</string>
+	<key>Strawberry Daiquiri </key>
+	<string>3.6</string>
+	<key>Tanqueray London Dry Gin </key>
+	<string>47.3</string>
+	<key>TGIF - On The Rocks Mudslide</key>
+	<string>10</string>
+	<key>TGIF - On The Rocks White Russian </key>
+	<string>12.5</string>
+	<key>Three Olives Naked Vodka</key>
+	<string>40</string>
+	<key>Tuaca Liqueur</key>
+	<string>35</string>
+	<key>ULLR Nodic Libation</key>
+	<string>45</string>
+	<key>Vermouth - Martini Rosso Vermouth </key>
+	<string>16</string>
+	<key>Vodka - Royal Gate (generic) 80 proof</key>
+	<string>40</string>
+	<key>Vodka and Coke </key>
+	<string>13.3</string>
+	<key>Vodka and Red Bull </key>
+	<string>13.3</string>
+	<key>Vodka and Rockstar </key>
+	<string>13.3</string>
+	<key>White Russian </key>
+	<string>17.7</string>
+	<key>Wild Turkey 101</key>
+	<string>50.5</string>
+	<key>Wild Turkey 80</key>
+	<string>40</string>
+	<key>Yazi Ginger Vodka</key>
+	<string>35</string>
+	<key>Yukon Jack</key>
+	<string>50</string>
+	<key>Zima</key>
+	<string>4.94</string>
+</dict>
+</plist>

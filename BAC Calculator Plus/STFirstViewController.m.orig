@@ -1,0 +1,50 @@
+//
+//  STFirstViewController.m
+//  BAC Calculator Plus
+//
+//  Created by Samuel Turner on 4/5/14.
+//  Copyright (c) 2014 Samuel Turner. All rights reserved.
+//
+
+#import "STFirstViewController.h"
+
+@interface STFirstViewController ()
+
+@end
+
+@implementation STFirstViewController
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)malePressed:(id)sender {
+    float beerNumber = [_beerEntered.text floatValue];
+    float wineNumber = [_wineEntered.text floatValue];
+    float shotNumber = [_shotEntered.text floatValue];
+    float drinkNumber = beerNumber + wineNumber + shotNumber;
+    float time = [_timeEntered.text floatValue];
+    float weight = [_weightEntered.text floatValue];
+    float maleBAC = (((.806*drinkNumber*1.2)/0.58*weight)-(0.015*time));
+}
+
+- (IBAction)femalePressed:(id)sender {
+}
+
+- (IBAction)hideKeyboard:(id)sender {
+    [_beerEntered resignFirstResponder];
+    [_wineEntered resignFirstResponder];
+    [_shotEntered resignFirstResponder];
+    [_timeEntered resignFirstResponder];
+    [_weightEntered resignFirstResponder];
+}
+
+@end

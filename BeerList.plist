@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>123</key>
+	<array>
+		<string>1888 Bock</string>
+		<string>46 &apos;er Pale Ale</string>
+		<string>90 Shilling</string>
+	</array>
+	<key>A</key>
+	<array>
+		<string>Abbey</string>
+		<string>Abbey Ale</string>
+		<string>Abbey Ave. Dubbel</string>
+		<string>Adirondack Lager</string>
+		<string>Adirondack Lager</string>
+		<string>Alabaster</string>
+		<string>Alaskan Amber</string>
+		<string>Alaskan ESB</string>
+		<string>Alaskan Pale Ale</string>
+		<string>Alaskan Smoked Porter</string>
+		<string>Alaskan Stout</string>
+		<string>Alaskan Winter Ale</string>
+		<string>Alberta Clipper</string>
+		<string>Albion Amber</string>
+		<string>Ale</string>
+		<string>Alexander Keiths India Pale Ale</string>
+		<string>Alexander Keiths Traditional Lager</string>
+		<string>Aloha Ale</string>
+		<string>Altbier</string>
+		<string>Amber</string>
+		<string>Amber Ale</string>
+		<string>Amstel</string>
+		<string>Amstel Light</string>
+		<string>Anchor Porter</string>
+		<string>Anchor Small</string>
+		<string>Anchor Steam</string>
+		<string>Andygator</string>
+		<string>Anhauser Busch King Cobra</string>
+		<string>Anniversary Ale</string>
+		<string>Apricot Ale</string>
+		<string>Arrogant Bastard Ale</string>
+		<string>Arrogant Bastard Ale, Escondido, CA</string>
+		<string>Asahi Draft Beer</string>
+		<string>Aspen Edge</string>
+		<string>Autumn Ale</string>
+		<string>Avalanche Amber</string>
+	</array>
+	<key>B</key>
+	<array>
+		<string>Bachelor ESB</string>
+		<string>Bailout Brew</string>
+		<string>Barley Wine</string>
+		<string>Barney Flats Oatmeal</string>
+		<string>Barrel Select Pils</string>
+		<string>Barrel Trolly beer sold at Harris Teeter stores</string>
+		<string>Barrel-Aged Blackout Stout</string>
+		<string>Bass ANDCo&apos;s Pale Ale</string>
+		<string>BBC Steal Rail</string>
+		<string>Beamish Irish Cream Stout</string>
+		<string>Beamish Stout</string>
+		<string>Beck&apos;s</string>
+		<string>Beck&apos;s Beer</string>
+		<string>Beck&apos;s Dark</string>
+		<string>Beck&apos;s Light</string>
+		<string>Belgian Tripel Dog Dare</string>
+		<string>Belgian White</string>
+		<string>Belk&apos;s ESB</string>
+		<string>Berlot</string>
+		<string>Berry Weiss</string>
+		<string>Best Brown Ale</string>
+		<string>Big Black Smoke</string>
+		<string>Big Eye IPA</string>
+		<string>Big Flats</string>
+		<string>Big Fog ESB</string>
+		<string>Big Wave</string>
+		<string>Bitburger Drive</string>
+		<string>Black ANDTan</string>
+		<string>Black and Tan</string>
+		<string>Black Butte Porter</string>
+		<string>Black Forest</string>
+		<string>Black Ice</string>
+		<string>Black Rabbit Porter</string>
+		<string>Black Star Double Hopped Golden Lager¾</string>
+		<string>Black Strap Stout</string>
+		<string>Blackout Stout</string>
+		<string>Blatz Beer</string>
+		<string>Blatz Light</string>
+		<string>Blonde Bock</string>
+		<string>Blonde Bombshell by Southern Star</string>
+		<string>Blue Dawg Brewing Blueberry Lager</string>
+		<string>Blue Heron</string>
+		<string>Blue Moon</string>
+		<string>Blue Moon White</string>
+		<string>Blue Paddle</string>
+		<string>Bluebeery Ale</string>
+		<string>Bobby</string>
+		<string>Bock</string>
+		<string>Bock</string>
+		<string>Boddingtons Pub Ale</string>
+		<string>Boont Amber</string>
+		<string>Boulevard Pilsner</string>
+		<string>Bourbon County Brand Stout</string>
+		<string>Boxer beer light</string>
+		<string>Bramha Chopp</string>
+		<string>Breakout Stout</string>
+		<string>Broken Rake</string>
+		<string>Broken Top Bock</string>
+		<string>Brooklyn Lager</string>
+		<string>Brown Ale</string>
+		<string>Buckin&apos; Horse Pilsner</string>
+		<string>Buckler</string>
+		<string>Bud Dry</string>
+		<string>Bud Ice</string>
+		<string>Bud Ice Light</string>
+		<string>Bud Light</string>
+		<string>Bud Light Golden Wheat</string>
+		<string>Bud Light Lime</string>
+		<string>Bud Light Platinum</string>
+		<string>Bud Select 55 / Bud 55</string>
+		<string>Budvar</string>
+		<string>Budweiser</string>
+		<string>Budweiser 66 (UK)</string>
+		<string>Budweiser American Ale</string>
+		<string>Budweiser Select</string>
+		<string>Burger</string>
+		<string>Burger Light</string>
+		<string>Burning River Pale Ale</string>
+		<string>Busch</string>
+		<string>Busch Beer</string>
+		<string>Busch Ice</string>
+		<string>Busch Light</string>
+		<string>Buttface Amber Ale</string>
+	</array>
+	<key>C</key>
+	<array>
+		<string>Caballo Extra</string>
+		<string>Calico IPA</string>
+		<string>Carling Black Label</string>
+		<string>Carlsberg</string>
+		<string>Carlsburg</string>
+		<string>Carlsburg Light</string>
+		<string>Cascade Ale</string>
+		<string>Cellar Dweller</string>
+		<string>Cerveza Carta Blanca</string>
+		<string>Cherry Stout</string>
+		<string>Chester Golden A]e</string>
+		<string>Chimay Grand Reserve</string>
+		<string>Christian Moerlein Emancipator Doppelbock</string>
+		<string>Christian Moerlein Over-The-Rhine Ale</string>
+		<string>Christmas Ale</string>
+		<string>Christmas Ale</string>
+		<string>Christmas Ale</string>
+		<string>Cinder Cone Red</string>
+		<string>Classic Amber</string>
+		<string>Clausthaler</string>
+		<string>Cleveland Brown Ale</string>
+		<string>Coastline Pilsner</string>
+		<string>Colt 45 Malt Liquor</string>
+		<string>Commodore Perry IPA</string>
+		<string>Conway&apos;s Irish Ale</string>
+		<string>Coopers Dark Ale</string>
+		<string>Coopers Draught</string>
+		<string>Coopers Extra Strong Vintage Ale</string>
+		<string>Coopers Pale Ale</string>
+		<string>Coopers Premium Ale</string>
+		<string>Coopers Sparkling Ale</string>
+		<string>Coopers Stout</string>
+		<string>Coors Banquet Beer</string>
+		<string>Coors Extra Gold</string>
+		<string>Coors Light</string>
+		<string>Coors NA</string>
+		<string>Coors Original</string>
+		<string>Corona Extra</string>
+		<string>Corona Extra Beer</string>
+		<string>Corona Light</string>
+		<string>Corsondonk Brown Abbey</string>
+		<string>Crazy Stallion</string>
+		<string>Cream Ale</string>
+		<string>Creamy Dark</string>
+		<string>Curve Ball K_lsch</string>
+		<string>CUSQUENA beer from Peru</string>
+		<string>Cutthroat Pale Ale</string>
+		<string>Cutthroat Porter</string>
+		<string>Czechvar</string>
+		<string>Czechver (Budvar)</string>
+	</array>
+	<key>D</key>
+	<array>
+		<string>Dales Pale Ale</string>
+		<string>Deep Enders Porter</string>
+		<string>Dogfish Head</string>
+		<string>Dortmunder Gold Lager</string>
+		<string>Dos Equis XX</string>
+		<string>Dos Equis XX Special Lager</string>
+		<string>Dos Perros</string>
+		<string>Double Bag</string>
+		<string>Double Bastard Ale</string>
+		<string>Double Cream Stout</string>
+		<string>Dragon Stout</string>
+		<string>Drop Top Amber Ale</string>
+		<string>Dry Irish Stout</string>
+	</array>
+	<key>E</key>
+	<array>
+		<string>Easy Street Wheat</string>
+		<string>Ebenezer Ale</string>
+		<string>Edison Light</string>
+		<string>Edmund Fitzgerald Porter</string>
+		<string>El Presidente</string>
+		<string>Eliot Ness Amber Lager</string>
+		<string>Engine 20</string>
+		<string>English Premium Ale</string>
+		<string>English Premium Bitter</string>
+		<string>Ephemere Apple</string>
+		<string>ESB</string>
+		<string>Expedition Stout</string>
+		<string>Extra Pale Ale</string>
+	</array>
+	<key>F</key>
+	<array>
+		<string>Fall Fest</string>
+		<string>Fat Bastard Scotch Style Ale</string>
+		<string>Fat Squirrel</string>
+		<string>Fat Tire</string>
+		<string>Fat Weasel</string>
+		<string>Fireside Nut Brown</string>
+		<string>Foreign Extra Stout</string>
+		<string>Foster&apos;s Lager</string>
+		<string>Fred&apos;s Black Lager</string>
+		<string>Freestyle Pilsner</string>
+		<string>Fuller&apos;s ESB</string>
+		<string>Fuller&apos;s ESB</string>
+		<string>Fuller&apos;s London Pride</string>
+		<string>Furstenberg German Beer</string>
+	</array>
+	<key>G</key>
+	<array>
+		<string>Genesee Beer</string>
+		<string>Genesee Cream Ale</string>
+		<string>Genesee Ice</string>
+		<string>Genesee Red</string>
+		<string>Genessee 12 Horse</string>
+		<string>Genny Light</string>
+		<string>George Killian&apos;s Irish Red</string>
+		<string>Glockenspiel</string>
+		<string>Gnaw Bone</string>
+		<string>Going to the Sun IPA</string>
+		<string>Gold Sovereign Ale</string>
+		<string>Golden</string>
+		<string>Goldmine Lager</string>
+		<string>Goldrush</string>
+		<string>Good People Brewing Company IPA</string>
+		<string>Goose Island Golden Pilsner</string>
+		<string>Grainbelt</string>
+		<string>Grand Cru</string>
+		<string>Grassroots Ale</string>
+		<string>Great Lakes Bitter</string>
+		<string>Great Northern Porter</string>
+		<string>Great Wall</string>
+		<string>Greenall&apos;s Cheshire English Pub Beer</string>
+		<string>Grolsch</string>
+		<string>Grolsch Lager Beer</string>
+		<string>Guiness Draught - Bottle</string>
+		<string>Guinness Black Lager</string>
+		<string>Guinness Extra Stout</string>
+		<string>Gumball head</string>
+	</array>
+	<key>H</key>
+	<array>
+		<string>Hacker Pschorr</string>
+		<string>Haffenreffer Private Stock</string>
+		<string>Hamm&apos;s Beer</string>
+		<string>Hamm&apos;s Golden Draft</string>
+		<string>Hamm&apos;s Light</string>
+		<string>Hamm&apos;s Special Light</string>
+		<string>Hammerhead</string>
+		<string>Happy Camper IPA</string>
+		<string>Harp</string>
+		<string>Harpoon Ale</string>
+		<string>Harpoon Dark</string>
+		<string>Harpoon IPA</string>
+		<string>Harpoon UFO</string>
+		<string>Hefeweizen</string>
+		<string>Hefeweizen</string>
+		<string>Hefeweizen</string>
+		<string>Heineken</string>
+		<string>Heineken Lager Beer</string>
+		<string>Heineken Light</string>
+		<string>Heineken Special Dark Beer</string>
+		<string>Hell&apos;s Belle</string>
+		<string>Hellroaring Amber Lager</string>
+		<string>High Rollers Wheat</string>
+		<string>Highlander Premium Beer</string>
+		<string>Highlander Scottish Ale</string>
+		<string>Hoegaarden</string>
+		<string>Holy Moses White Ale</string>
+		<string>Honey Ale</string>
+		<string>Honey Brown</string>
+		<string>Honey Rye</string>
+		<string>Honey Weiss</string>
+		<string>Hop Madness</string>
+		<string>Hop Ottin&apos;</string>
+		<string>Hophead IPA</string>
+		<string>Horizon Red Ale</string>
+		<string>Hornsby Draft Cider</string>
+		<string>Hudepohl Amber Lager</string>
+		<string>Hudy Delight</string>
+		<string>Hudy Light</string>
+		<string>Hurricane High Gravity Lager</string>
+	</array>
+	<key>I</key>
+	<array>
+		<string>I.C. Light</string>
+		<string>Icehouse</string>
+		<string>Imperial Dortmunder</string>
+		<string>Imperial IPA</string>
+		<string>Imperial Stout</string>
+		<string>Independence Ale</string>
+		<string>India Pale Ale</string>
+		<string>India Pale Ale</string>
+		<string>India Pale Ale</string>
+		<string>India Pale Ale</string>
+		<string>Indiana Amber</string>
+		<string>Instigator Doppelbock</string>
+		<string>IPA</string>
+		<string>Irish Pale Ale</string>
+		<string>Iron City Lager</string>
+		<string>Isolation</string>
+	</array>
+	<key>J</key>
+	<array>
+		<string>Jai Alai</string>
+		<string>Jockamo</string>
+		<string>Jubelale</string>
+	</array>
+	<key>K</key>
+	<array>
+		<string>Kalamazoo Stout</string>
+		<string>Karlovacko Croatia</string>
+		<string>Kentucky Ale Bourbon Barrel</string>
+		<string>Keystone Ice</string>
+		<string>Keystone Light</string>
+		<string>Keystone Premium</string>
+		<string>Kilarney&apos;s Red Lager</string>
+		<string>Killian&apos;s</string>
+		<string>Kilt Lifter Scottish Style Ale</string>
+		<string>Kiltlifter</string>
+		<string>Kingfisher beer</string>
+		<string>Kipling Light Lager</string>
+		<string>Kirin Beer</string>
+		<string>Kirkland Signature Pale Ale</string>
+		<string>Kolsch</string>
+		<string>Kolsch</string>
+		<string>Konig Pilsener</string>
+		<string>Kraftig Lager (William K. Busch)</string>
+		<string>Kronenbourg Beer</string>
+		<string>Kronenbourg Imported Dark Beer</string>
+	</array>
+	<key>L</key>
+	<array>
+		<string>La Fin du Monde</string>
+		<string>Labatt Blue</string>
+		<string>Labatt Blue Light</string>
+		<string>Labatt Blue Light Lime</string>
+		<string>Labatt&apos;s 50</string>
+		<string>Lager</string>
+		<string>Lagunitas India Pale Ale</string>
+		<string>Lagunitas IPA</string>
+		<string>Lake Erie Monster</string>
+		<string>Landshark Lager</string>
+		<string>Leffe Blonde</string>
+		<string>Leinenkugel Amber Light</string>
+		<string>Leinenkugel Creamy Dark</string>
+		<string>Leinenkugel Honey Weiss</string>
+		<string>Leinenkugel Light</string>
+		<string>Leinenkugel Northwoods Lager</string>
+		<string>Leinenkugel Original</string>
+		<string>Leinenkugel Original</string>
+		<string>Leinenkugel Red</string>
+		<string>Leinenkugel Summer Shandy</string>
+		<string>Leinenkugel&apos;s Sunset Wheat</string>
+		<string>Levity</string>
+		<string>Liberty Ale</string>
+		<string>Light</string>
+		<string>Light</string>
+		<string>Light Lager</string>
+		<string>Lindemans Cassis</string>
+		<string>Lindemans Framboise</string>
+		<string>Lindemans Kriek</string>
+		<string>Lindemans Lambic</string>
+		<string>Lindemans Pecheresse</string>
+		<string>Lindemans Pomme</string>
+		<string>Lindemans Pche</string>
+		<string>Little King&apos;s Cream Ale</string>
+		<string>Little King&apos;s Cream Ale</string>
+		<string>Little Kings Creame Ale</string>
+		<string>Loch Erie Scotch Ale</string>
+		<string>Locktender Lager</string>
+		<string>Lone Star</string>
+		<string>Long Hammer IPA</string>
+		<string>Long Trail Ale</string>
+		<string>Lord Chesterfields</string>
+		<string>Lorelei Dunkel Weizen</string>
+		<string>Lost Lake</string>
+		<string>Lowenbrau Dark</string>
+		<string>Lowenbrau Special Beer</string>
+		<string>Lowenbr_u</string>
+		<string>Lucky Bucket Certified Evil</string>
+		<string>Lucky Bucket IPA</string>
+		<string>Lucky Bucket Lager</string>
+		<string>Lucky Lager Force 8</string>
+	</array>
+	<key>M</key>
+	<array>
+		<string>Magnum Malt Liquor</string>
+		<string>Maple Nut Brown Ale</string>
+		<string>Marin Weiss</string>
+		<string>Market Street Wheat</string>
+		<string>Matt Brewing Co. Saranac White IPA</string>
+		<string>McEwans Scotch Ale</string>
+		<string>Michael Shea&apos;s</string>
+		<string>Michelob</string>
+		<string>Michelob Amber Boch</string>
+		<string>Michelob Amber Bock</string>
+		<string>Michelob Black ANDTan</string>
+		<string>Michelob Golden Draft</string>
+		<string>Michelob Golden Draft Light</string>
+		<string>Michelob Hefeweizen</string>
+		<string>Michelob Honey Lager</string>
+		<string>Michelob Light</string>
+		<string>Michelob Ultra</string>
+		<string>Michigan Brewing Company Nut Brown Ale</string>
+		<string>Michigan Brewing Company Wheatland Beer</string>
+		<string>Mickey&apos;s</string>
+		<string>Mickey&apos;s Fine Malt Liquor</string>
+		<string>Mickey&apos;s Ice</string>
+		<string>Milk Stout</string>
+		<string>Miller Genuine Draft</string>
+		<string>Miller Genuine Draft 64 / MGD 64</string>
+		<string>Miller Genuine Draft Light</string>
+		<string>Miller High Life</string>
+		<string>Miller High Life Light</string>
+		<string>Miller Ice Light</string>
+		<string>Miller Lite</string>
+		<string>Milwaukee Special Reserve Ice</string>
+		<string>Milwaukee&apos;s Best</string>
+		<string>Milwaukee&apos;s Best Ice</string>
+		<string>Milwaukee&apos;s Best Light</string>
+		<string>Mirror Pond Pale</string>
+		<string>Modelo Especial</string>
+		<string>Molson Canadian Beer</string>
+		<string>Molson Dry</string>
+		<string>Molson Golden Beer</string>
+		<string>Molson Ice</string>
+		<string>Molson Light</string>
+		<string>Molson XXX</string>
+		<string>Moondog ESB</string>
+		<string>Moose Drool Big Sky Brown Ale</string>
+		<string>Moosehead</string>
+		<string>Moosehead Canadian Lager Beer</string>
+		<string>Mothership</string>
+		<string>Mt. Tam Pale Ale</string>
+		<string>Murphy&apos;s Irish Red</string>
+		<string>Murphy&apos;s Stout</string>
+		<string>M_rzen</string>
+	</array>
+	<key>N</key>
+	<array>
+		<string>Nastro Azzuro Export Lager</string>
+		<string>National Bohemian beer</string>
+		<string>Natural Ice</string>
+		<string>Natural Light</string>
+		<string>Negra Modelo</string>
+		<string>New Belgium 1554</string>
+		<string>New Glarus Barley Wine</string>
+		<string>Newcastle Brown Ale</string>
+		<string>Nordik Wolf Light</string>
+		<string>Northern Golden Lager</string>
+		<string>Northern Honey Brown</string>
+		<string>Northern Special Light</string>
+		<string>Nosferatu</string>
+	</array>
+	<key>O</key>
+	<array>
+		<string>O&apos;Doul&apos;s</string>
+		<string>O&apos;Douls Amber</string>
+		<string>O&apos;Keefe Canadian Beer</string>
+		<string>Oatmeal Stout</string>
+		<string>Oatmeal Stout</string>
+		<string>Oberon</string>
+		<string>Obsidian Stout</string>
+		<string>Ocktoberfest</string>
+		<string>Ohio City Oatmeal Stout</string>
+		<string>Oktoberfest</string>
+		<string>Old Dipsea Barleywine</string>
+		<string>Old Foghorn</string>
+		<string>Old Knucklehead</string>
+		<string>Old Milwaukee</string>
+		<string>Old Milwaukee Light</string>
+		<string>Old Style Beer</string>
+		<string>Olde English 800</string>
+		<string>Olde English 800 Ice</string>
+		<string>Olde English 800 Malt Liquor</string>
+		<string>Olympia Premium Lager</string>
+		<string>Orange Blossom Pilsner</string>
+	</array>
+	<key>P</key>
+	<array>
+		<string>Pabst</string>
+		<string>Pabst Blue Ribbon</string>
+		<string>Pabst Extra Light Low Alcohol</string>
+		<string>Pacifico Clara</string>
+		<string>Pale Ale</string>
+		<string>Pale Ale</string>
+		<string>Pale Ale</string>
+		<string>Pale Ale</string>
+		<string>Pale Ale</string>
+		<string>Pale Ale</string>
+		<string>Pale Ale</string>
+		<string>Pale Pale Ale</string>
+		<string>Palm beers</string>
+		<string>Palm Royale</string>
+		<string>Palm Speciale</string>
+		<string>Palone</string>
+		<string>Pandora&apos;s Bock</string>
+		<string>Paulaner Hefe-Weizen</string>
+		<string>Paulaner Original Munich</string>
+		<string>Paulaner Salvator</string>
+		<string>Pecan</string>
+		<string>Pete&apos;s Helles Lager</string>
+		<string>Pete&apos;s Oktoberfest</string>
+		<string>Pete&apos;s Red Rush</string>
+		<string>Pete&apos;s Strawberry Blonde</string>
+		<string>Pete&apos;s Summer Brew</string>
+		<string>Pete&apos;s Wicked Ale</string>
+		<string>Pete&apos;s Winter Brew</string>
+		<string>Peter&apos;s Brand (Union Export Brewery, Breda Holland; licensed to</string>
+		<string>Pilsener Urquell</string>
+		<string>Pilsner</string>
+		<string>Pine Mountain Pils</string>
+		<string>Pintail Ale</string>
+		<string>Point hand-crafted Belgian White</string>
+		<string>Point Reyes Porter</string>
+		<string>Polar Bear Pilsner</string>
+		<string>Poleeko Gold</string>
+		<string>Pomegranate Wheat</string>
+		<string>Pomegranate Wheat</string>
+		<string>Porter</string>
+		<string>Porter</string>
+		<string>Premium</string>
+		<string>Private Reserve</string>
+		<string>Prohibition Pils</string>
+		<string>Pumpkin Ale</string>
+		<string>Purple Haze</string>
+	</array>
+	<key>Q</key>
+	<array>
+		<string>Quail Springs IPA</string>
+	</array>
+	<key>R</key>
+	<array>
+		<string>Rackhouse Ale</string>
+		<string>RAMSAY&apos;S FAT LIP ALE</string>
+		<string>Rapid Red Ale</string>
+		<string>Red Ale</string>
+		<string>Red Dog</string>
+		<string>Red Lager</string>
+		<string>Red Strlpe Lager Beer</string>
+		<string>Redbridge (Gluten free beer)</string>
+		<string>Redhook Blonde Ale</string>
+		<string>Redhook ESB</string>
+		<string>Redhook Hefe-weizen</string>
+		<string>Redhook IPA</string>
+		<string>Redhook Nut Brown</string>
+		<string>Restoration</string>
+		<string>Rhinebecker</string>
+		<string>Rich ANDDan&apos;s Rye IPA</string>
+		<string>Rock&apos;s Rye</string>
+		<string>Rockefeller Bock</string>
+		<string>Rolling Rock Extra Pale</string>
+		<string>Rolling Rock Light</string>
+		<string>Rolling Rock Premium Beer</string>
+		<string>Roscoe&apos;s Hop House</string>
+		<string>Rubicon</string>
+		<string>Ruby</string>
+		<string>Ruination IPA</string>
+		<string>Rye of the Tiger</string>
+	</array>
+	<key>S</key>
+	<array>
+		<string>Saint Arnold Amber Ale</string>
+		<string>Saint Arnold brown Ale</string>
+		<string>Saint Arnold Christmas Ale</string>
+		<string>Saint Arnold Divine Reserve *</string>
+		<string>Saint Arnold Elissa IPA</string>
+		<string>Saint Arnold Fancy Lawnmower</string>
+		<string>Saint Arnold Oktoberfest</string>
+		<string>Saint Arnold Spring Bock</string>
+		<string>Saint Arnold Summer Pils</string>
+		<string>Saint Arnold Weedwacker</string>
+		<string>Saint Arnold Winter Stout</string>
+		<string>Salvator</string>
+		<string>Sam Adams Alpine Spring</string>
+		<string>Sam Adams Boston Ale</string>
+		<string>Sam Adams Boston Lager</string>
+		<string>Sam Adams Cherry Wheat</string>
+		<string>Sam Adams Cream Stout</string>
+		<string>Sam Adams Double Bock</string>
+		<string>Sam Adams Golden Pilsner</string>
+		<string>Sam Adams IPA</string>
+		<string>Sam Adams Light</string>
+		<string>Sam Adams Noble Pils</string>
+		<string>Sam Adams Octoberfest</string>
+		<string>Sam Adams Pale Ale</string>
+		<string>Sam Adams Spring Ale</string>
+		<string>Sam Adams Summer Ale</string>
+		<string>Sam Adams Triple Bock</string>
+		<string>Sam Adams Winter Lager</string>
+		<string>Samichlaus Beer (Santa Claus Beer)</string>
+		<string>Samuel Adams --Latitude- beer</string>
+		<string>Samuel Adams Imperial Stout</string>
+		<string>Samuel Adams Imperial White</string>
+		<string>Samuel Adams Wee Heavy</string>
+		<string>SAN MIGUEL BEER</string>
+		<string>Sapporo Reserve</string>
+		<string>Satsuma</string>
+		<string>Save Our Shore</string>
+		<string>Schaefer Beer</string>
+		<string>Schells Stout</string>
+		<string>Schlitz Beer</string>
+		<string>Schlitz Light</string>
+		<string>Schlitz Malt Liquor</string>
+		<string>Schorsch Bock 43</string>
+		<string>Schwarzbier</string>
+		<string>Sheaf Stout</string>
+		<string>Shiner 102</string>
+		<string>Shiner Blonde</string>
+		<string>Shiner Bock</string>
+		<string>Shiner Bohemian Black Lager</string>
+		<string>Shiner Hefewizen</string>
+		<string>Shiner Light</string>
+		<string>Shiner Light Blonde</string>
+		<string>Shipyard Export</string>
+		<string>Shipyard IPA</string>
+		<string>Shock Top</string>
+		<string>Shock Top Belgian White</string>
+		<string>Shock Top Lemon Shandy</string>
+		<string>Shock Top Pumpkin Wheat</string>
+		<string>Shock Top Raspberry Wheat</string>
+		<string>Shock Top Wheat IPA</string>
+		<string>Sierra Nevada Bigfoot</string>
+		<string>Sierra Nevada Celebration</string>
+		<string>Sierra Nevada Glissade</string>
+		<string>Sierra Nevada Pale Ale</string>
+		<string>Sierra Nevada Porter</string>
+		<string>Sierra Nevada Stout</string>
+		<string>Sierra Nevada Summerfest</string>
+		<string>Sierra Nevada Torpedo</string>
+		<string>Sierra Nevada Wheat</string>
+		<string>Signature Stroh Beer</string>
+		<string>Simpler Times Pilsner</string>
+		<string>Singha</string>
+		<string>Skinny Dip</string>
+		<string>Smithwicks Ale</string>
+		<string>Snake Pit</string>
+		<string>Snow Beer</string>
+		<string>Snow Cap Ale</string>
+		<string>SnowGhost Winter Lager</string>
+		<string>Sol Cerveza Especial</string>
+		<string>Spaten Munich Special Dark Beer</string>
+		<string>Spaten Optimator</string>
+		<string>Special Export</string>
+		<string>Special Export Light</string>
+		<string>Spotted Cow</string>
+		<string>Spring Run IPA</string>
+		<string>St. Ides Malt Liquor</string>
+		<string>St. Pauli Girl</string>
+		<string>St. Pauli Girl Dark</string>
+		<string>St. Pauli Girl N.A.</string>
+		<string>Stag</string>
+		<string>Stag Lager</string>
+		<string>Staub Dark</string>
+		<string>Staub Light</string>
+		<string>Staub Premium</string>
+		<string>Steel Reserve 211</string>
+		<string>Steendonck</string>
+		<string>Steinlager beers of New Zealand</string>
+		<string>Stella Artois</string>
+		<string>Stone IPA</string>
+		<string>Stone Old Guardian</string>
+		<string>Stone Pale Ale</string>
+		<string>Stone Smoked Porter</string>
+		<string>Strawberry</string>
+		<string>Stroh&apos;s Beer</string>
+		<string>Stroh&apos;s Light</string>
+		<string>Summer Ale</string>
+		<string>Summer Brew</string>
+		<string>Summer Brew</string>
+		<string>Summer Shandy</string>
+		<string>Summit Hefe Weizen</string>
+		<string>Summit IPA</string>
+		<string>Summit Maibock</string>
+		<string>Summit Oktoberfest</string>
+		<string>Summit Pale Ale</string>
+		<string>Summit Pilsener</string>
+		<string>Summit Winter Ale</string>
+		<string>Sunset Wheat</string>
+		<string>Suntory Draft Beer</string>
+		<string>Superfly</string>
+		<string>Superior Imported Beer</string>
+	</array>
+	<key>T</key>
+	<array>
+		<string>Tactical Nuclear Penguin</string>
+		<string>Taj Mahal Premium Lager</string>
+		<string>Tecate / Cerveza Tecate</string>
+		<string>Tempus Fugit Ale</string>
+		<string>Terminator</string>
+		<string>The Doppelrock</string>
+		<string>The Stein Bach</string>
+		<string>The Wright Pils</string>
+		<string>Third Coast Old Ale</string>
+		<string>Thomas Jeffe-Weizen</string>
+		<string>Thos Cooper ANDSons Adelaide Lager</string>
+		<string>Thos Cooper ANDSons Real Ale</string>
+		<string>Thos Cooper ANDSons Stout</string>
+		<string>Tiger from Singapore</string>
+		<string>Tilted Kilt</string>
+		<string>Tolly Origlnal Premium Ale</string>
+		<string>Triple Bag</string>
+		<string>Trippel Beer</string>
+		<string>Troegs Plale</string>
+		<string>Trumer Pilser</string>
+		<string>Tsingtao</string>
+		<string>Tsingtao Beer</string>
+		<string>Tuborg Deluxe Dark Export</string>
+		<string>Tuborg Export Quality</string>
+		<string>Turbodog</string>
+		<string>Two Hearted Ale</string>
+	</array>
+	<key>U</key>
+	<array>
+		<string>UBU Ale</string>
+	</array>
+	<key>V</key>
+	<array>
+		<string>Vanilla Porter - Breckenridge Brewery</string>
+		<string>Victoria Bitter (VB)</string>
+	</array>
+	<key>W</key>
+	<array>
+		<string>Wachusett Blueberry</string>
+		<string>Wachusett Country Ale</string>
+		<string>Wachusett country Ale</string>
+		<string>Warsteiner Premium Dunkel</string>
+		<string>Warsteiner Premium Fresh</string>
+		<string>Warsteiner Premium Verum</string>
+		<string>Watney&apos;s Red Barrel Beer</string>
+		<string>Weinhard&apos;s Amber Ale</string>
+		<string>Weinhard&apos;s Amber Light</string>
+		<string>Weinhard&apos;s Blonde Lager</string>
+		<string>Weinhard&apos;s Dark</string>
+		<string>Weinhard&apos;s Hefeweizen</string>
+		<string>Weinhard&apos;s Pale Ale</string>
+		<string>Weinhard&apos;s Private Reserve</string>
+		<string>Wheat</string>
+		<string>Wheatfish</string>
+		<string>Widmer Blonde Ale</string>
+		<string>Widmer Drop top</string>
+		<string>Widmer Hefeweizen</string>
+		<string>Widmer Oktoberfest</string>
+		<string>Widmer Pale Ale</string>
+		<string>Widmer Sommerbr_</string>
+		<string>Widmer Widberry</string>
+		<string>Widmer Winternacht</string>
+		<string>Wild Blue Lager</string>
+		<string>Wild Huckleberry Wheat</string>
+		<string>Wildcats Premium Beer</string>
+		<string>Winter Lager</string>
+		<string>Winter Solstice</string>
+		<string>Wisconsin Amber</string>
+		<string>WIT Till Next Year!</string>
+		<string>Wit&apos;s End</string>
+		<string>Witches Brew Golden Ale 9.3%</string>
+		<string>Wolfhound Stout</string>
+		<string>Wolters Pilsener Premium</string>
+		<string>Woodtooth Porter</string>
+		<string>Wurtzburger Hofbrau Light</string>
+		<string>Wurzburger Hofbrau</string>
+	</array>
+	<key>X</key>
+	<array>
+		<string>Xingu a Brazillian Black Beer</string>
+	</array>
+	<key>Y</key>
+	<array>
+		<string>Yanjing</string>
+		<string>Yellow Tail Pale Ale</string>
+		<string>York Street Bitter</string>
+		<string>Yuengling Ale</string>
+		<string>Yuengling Lager</string>
+		<string>Yuengling Light</string>
+		<string>Yuengling Porter</string>
+		<string>Yuengling Premium Beer</string>
+	</array>
+	<key>Z</key>
+	<array>
+		<string>Ziegenbock (TX)</string>
+		<string>ZYWIEC</string>
+		<string>Zywiec</string>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>1888 Bock</key><string>5.1</string>
+		<key>46 'er Pale Ale</key>
+		<string>6</string>
+		<key>90 Shilling</key>
+		<string>5.3</string>
+		<key>Abbey</key>
+		<string>7</string>
+		<key>Abbey Ale</key>
+		<string>8</string>
+		<key>Abbey Ave. Dubbel</key>
+		<string>8</string>
+		<key>Adirondack Lager</key>
+		<string>5.5</string>
+		<key>Adirondack Lager</key>
+		<string>5.5</string>
+		<key>Alabaster</key>
+		<string>4.5</string>
+		<key>Alaskan Amber</key>
+		<string>5</string>
+		<key>Alaskan ESB</key>
+		<string>5</string>
+		<key>Alaskan Pale Ale</key>
+		<string>4.6</string>
+		<key>Alaskan Smoked Porter</key>
+		<string>6.1</string>
+		<key>Alaskan Stout</key>
+		<string>5.7</string>
+		<key>Alaskan Winter Ale</key>
+		<string>6.2</string>
+		<key>Alberta Clipper</key>
+		<string>7</string>
+		<key>Albion Amber</key>
+		<string>5</string>
+		<key>Ale</key>
+		<string>5</string>
+		<key>Alexander Keiths India Pale Ale</key>
+		<string>5</string>
+		<key>Alexander Keiths Traditional Lager</key>
+		<string>5</string>
+		<key>Aloha Ale</key>
+		<string>6</string>
+		<key>Altbier</key>
+		<string>4.6</string>
+		<key>Amber</key>
+		<string>4.5</string>
+		<key>Amber Ale</key>
+		<string>5.5</string>
+		<key>Amstel</key>
+		<string>3.9</string>
+		<key>Amstel Light</key><string>3.5</string>
+		<key>Anchor Porter</key><string>5.6</string>
+		<key>Anchor Small</key><string>3.3</string>
+		<key>Anchor Steam</key><string>4.9</string>
+		<key>Andygator</key><string>8</string>
+		<key>Anhauser Busch King Cobra</key><string>6</string>
+		<key>Anniversary Ale</key><string>9.5</string>
+		<key>Apricot Ale</key><string>5.1</string>
+		<key>Arrogant Bastard Ale</key><string>7.2</string>
+		<key>Arrogant Bastard Ale, Escondido, CA</key><string>7.2</string>
+		<key>Asahi Draft Beer</key><string>5</string>
+		<key>Aspen Edge</key><string>4.1</string>
+		<key>Autumn Ale</key><string>6.7</string>
+		<key>Avalanche Amber</key><string>5.4</string>
+		<key>Bachelor ESB</key><string>5</string>
+		<key>Bailout Brew</key><string>7.5</string>
+		<key>Barley Wine</key><string>10.2</string>
+		<key>Barney Flats Oatmeal</key><string>5.7</string>
+		<key>Barrel Select Pils</key><string>5.1</string>
+		<key>Barrel Trolly beer sold at Harris Teeter stores</key><string>5.3</string>
+		<key>Barrel-Aged Blackout Stout</key><string>9.5</string>
+		<key>Bass ANDCo's Pale Ale</key><string>5.5</string>
+		<key>BBC Steal Rail</key><string>5.3</string>
+		<key>Beamish Irish Cream Stout</key><string>4.9</string>
+		<key>Beamish Stout</key><string>3.8</string>
+		<key>Beck's</key><string>5</string>
+		<key>Beck's Beer</key><string>5</string>
+		<key>Beck's Dark</key><string>4.8</string>
+		<key>Beck's Light</key><string>3.8</string>
+		<key>Belgian Tripel Dog Dare</key><string>9.5</string>
+		<key>Belgian White</key><string>5.3</string>
+		<key>Belk's ESB</key><string>6.8</string>
+		<key>Berlot</key><string>10.6</string>
+		<key>Berry Weiss</key><string>4.8</string>
+		<key>Best Brown Ale</key><string>5.8</string>
+		<key>Big Black Smoke</key><string>6.2</string>
+		<key>Big Eye IPA</key><string>6.8</string>
+		<key>Big Flats</key><string>4.8</string>
+		<key>Big Fog ESB</key><string>6</string>
+		<key>Big Wave</key><string>5.3</string>
+		<key>Bitburger Drive</key><string>0</string>
+		<key>Black ANDTan</key><string>4.5</string>
+		<key>Black and Tan</key><string>5.1</string>
+		<key>Black Butte Porter</key><string>5.2</string>
+		<key>Black Forest</key><string>5.3</string>
+		<key>Black Ice</key><string>7</string>
+		<key>Black Rabbit Porter</key><string>5.5</string>
+		<key>Black Star Double Hopped Golden Lager_</key><string>4.6</string>
+		<key>Black Strap Stout</key><string>6</string>
+		<key>Blackout Stout</key><string>9</string>
+		<key>Blatz Beer</key><string>4.8</string>
+		<key>Blatz Light</key><string>3.5</string>
+		<key>Blonde Bock</key><string>7</string>
+		<key>Blonde Bombshell by Southern Star</key><string>5.4</string>
+		<key>Blue Dawg Brewing Blueberry Lager</key><string>8</string>
+		<key>Blue Heron</key><string>4.9</string>
+		<key>Blue Moon</key><string>5.4</string>
+		<key>Blue Moon White</key><string>5.4</string>
+		<key>Blue Paddle</key><string>4.8</string>
+		<key>Bluebeery Ale</key><string>5</string>
+		<key>Bobby</key><string>4.6</string>
+		<key>Bock</key><string>5.1</string>
+		<key>Bock</key><string>6.5</string>
+		<key>Boddingtons Pub Ale</key><string>4.7</string>
+		<key>Boont Amber</key><string>5.8</string>
+		<key>Boulevard Pilsner</key><string>4.8</string>
+		<key>Bourbon County Brand Stout</key><string>14.5</string>
+		<key>Boxer beer light</key><string>5</string>
+		<key>Bramha Chopp</key><string>4.8</string>
+		<key>Breakout Stout</key><string>6</string>
+		<key>Broken Rake</key><string>6.4</string>
+		<key>Broken Top Bock</key><string>7</string>
+		<key>Brooklyn Lager</key><string>5.2</string>
+		<key>Brown Ale</key><string>6</string>
+		<key>Buckin' Horse Pilsner</key><string>5.1</string>
+		<key>Buckler</key><string>0</string>
+		<key>Bud Dry</key><string>5</string>
+		<key>Bud Ice</key><string>5.5</string>
+		<key>Bud Ice Light</key><string>4.1</string>
+		<key>Bud Light</key><string>4.2</string>
+		<key>Bud Light Golden Wheat</key><string>4.1</string>
+		<key>Bud Light Lime</key><string>4.2</string>
+		<key>Bud Light Platinum</key><string>6</string>
+		<key>Bud Select 55 / Bud 55</key><string>2.4</string>
+		<key>Budvar</key><string>5</string>
+		<key>Budweiser</key><string>5</string>
+		<key>Budweiser 66 (UK)</key><string>4</string>
+		<key>Budweiser American Ale</key><string>5.3</string>
+		<key>Budweiser Select</key><string>4.3</string>
+		<key>Burger</key><string>4.7</string>
+		<key>Burger Light</key><string>4.1</string>
+		<key>Burning River Pale Ale</key><string>6</string>
+		<key>Busch</key><string>4.6</string>
+		<key>Busch Beer</key><string>4.6</string>
+		<key>Busch Ice</key><string>5.9</string>
+		<key>Busch Light</key><string>4.2</string>
+		<key>Buttface Amber Ale</key><string>3.1</string>
+		<key>Caballo Extra</key><string>4.2</string>
+		<key>Calico IPA</key><string>8.3</string>
+		<key>Carling Black Label</key><string>4.3</string>
+		<key>Carlsberg</key><string>5</string>
+		<key>Carlsburg</key><string>4.6</string>
+		<key>Carlsburg Light</key><string>2.7</string>
+		<key>Cascade Ale</key><string>4.5</string>
+		<key>Cellar Dweller</key><string>5</string>
+		<key>Cerveza Carta Blanca</key><string>4</string>
+		<key>Cherry Stout</key><string>8</string>
+		<key>Chester Golden A]e</key><string>5.4</string>
+		<key>Chimay Grand Reserve</key><string>9</string>
+		<key>Christian Moerlein Emancipator Doppelbock</key><string>6.5</string>
+		<key>Christian Moerlein Over-The-Rhine Ale</key><string>6</string>
+		<key>Christmas Ale</key><string>7.4</string>
+		<key>Christmas Ale</key><string>7.5</string>
+		<key>Christmas Ale</key><string>7.5</string>
+		<key>Cinder Cone Red</key><string>5.8</string>
+		<key>Classic Amber</key><string>4.9</string>
+		<key>Clausthaler</key><string>0.4</string>
+		<key>Cleveland Brown Ale</key><string>6</string>
+		<key>Coastline Pilsner</key><string>5</string>
+		<key>Colt 45 Malt Liquor</key><string>6.1</string>
+		<key>Commodore Perry IPA</key><string>7.5</string>
+		<key>Conway's Irish Ale</key><string>6.5</string>
+		<key>Coopers Dark Ale</key><string>4.5</string>
+		<key>Coopers Draught</key><string>4.5</string>
+		<key>Coopers Extra Strong Vintage Ale</key><string>7.1</string>
+		<key>Coopers Pale Ale</key><string>5.9</string>
+		<key>Coopers Premium Ale</key><string>4.9</string>
+		<key>Coopers Sparkling Ale</key><string>5.8</string>
+		<key>Coopers Stout</key><string>6.8</string>
+		<key>Coors Banquet Beer</key><string>5</string>
+		<key>Coors Extra Gold</key><string>5</string>
+		<key>Coors Light</key><string>4.2</string>
+		<key>Coors NA</key><string>0.1</string>
+		<key>Coors Original</key><string>5</string>
+		<key>Corona Extra</key><string>4.6</string>
+		<key>Corona Extra Beer</key><string>4.6</string>
+		<key>Corona Light</key><string>4.5</string>
+		<key>Corsondonk Brown Abbey</key><string>7.5</string>
+		<key>Crazy Stallion</key><string>5.9</string>
+		<key>Cream Ale</key><string>5.5</string>
+		<key>Creamy Dark</key><string>4.9</string>
+		<key>Curve Ball K_lsch</key><string>4.8</string>
+		<key>CUSQUENA beer from Peru</key><string>4.8</string>
+		<key>Cutthroat Pale Ale</key><string>5.1</string>
+		<key>Cutthroat Porter</key><string>4.5</string>
+		<key>Czechvar</key><string>5</string>
+		<key>Czechver (Budvar)</key><string>5</string>
+		<key>Dales Pale Ale</key><string>6.5</string>
+		<key>Deep Enders Porter</key><string>5.5</string>
+		<key>Dogfish Head</key><string>15</string>
+		<key>Dortmunder Gold Lager</key><string>5.8</string>
+		<key>Dos Equis XX</key><string>4.8</string>
+		<key>Dos Equis XX Special Lager</key><string>4.9</string>
+		<key>Dos Perros</key><string>3.5</string>
+		<key>Double Bag</key><string>7.2</string>
+		<key>Double Bastard Ale</key><string>10</string>
+		<key>Double Cream Stout</key><string>7.5</string>
+		<key>Dragon Stout</key><string>6.8</string>
+		<key>Drop Top Amber Ale</key><string>4.9</string>
+		<key>Dry Irish Stout</key><string>4.6</string>
+		<key>Easy Street Wheat</key><string>4.7</string>
+		<key>Ebenezer Ale</key><string>6.4</string>
+		<key>Edison Light</key><string>4</string>
+		<key>Edmund Fitzgerald Porter</key><string>5.8</string>
+		<key>El Presidente</key><string>5</string>
+		<key>Eliot Ness Amber Lager</key><string>6.2</string>
+		<key>Engine 20</key><string>6</string>
+		<key>English Premium Ale</key><string>5.2</string>
+		<key>English Premium Bitter</key><string>5.2</string>
+		<key>Ephemere Apple</key><string>5.5</string>
+		<key>ESB</key><string>6.1</string>
+		<key>Expedition Stout</key><string>10</string>
+		<key>Extra Pale Ale</key><string>5.2</string>
+		<key>Fall Fest</key><string>5.4</string>
+		<key>Fat Bastard Scotch Style Ale</key><string>9</string>
+		<key>Fat Squirrel</key><string>5.8</string>
+		<key>Fat Tire</key><string>5.3</string>
+		<key>Fat Weasel</key><string>7.2</string>
+		<key>Fireside Nut Brown</key><string>4.9</string>
+		<key>Foreign Extra Stout</key><string>7.5</string>
+		<key>Foster's Lager</key><string>5.1</string>
+		<key>Fred's Black Lager</key><string>4.9</string>
+		<key>Freestyle Pilsner</key><string>5.5</string>
+		<key>Fuller's ESB</key><string>5.9</string>
+		<key>Fuller's ESB</key><string>5.9</string>
+		<key>Fuller's London Pride</key><string>4.7</string>
+		<key>Furstenberg German Beer</key><string>4.4</string>
+		<key>Genesee Beer</key><string>4.5</string>
+		<key>Genesee Cream Ale</key><string>5.1</string>
+		<key>Genesee Ice</key><string>5.9</string>
+		<key>Genesee Red</key><string>4.9</string>
+		<key>Genessee 12 Horse</key><string>4.8</string>
+		<key>Genny Light</key><string>3.6</string>
+		<key>George Killian's Irish Red</key><string>4.9</string>
+		<key>Glockenspiel</key><string>8</string>
+		<key>Gnaw Bone</key><string>5.8</string>
+		<key>Going to the Sun IPA</key><string>5.7</string>
+		<key>Gold Sovereign Ale</key><string>6.3</string>
+		<key>Golden</key><string>4.2</string>
+		<key>Goldmine Lager</key><string>4.5</string>
+		<key>Goldrush</key><string>5.5</string>
+		<key>Good People Brewing Company IPA</key><string>7.2</string>
+		<key>Goose Island Golden Pilsner</key><string>4.2</string>
+		<key>Grainbelt</key><string>4.9</string>
+		<key>Grand Cru</key><string>8.2</string>
+		<key>Grassroots Ale</key><string>6.2</string>
+		<key>Great Lakes Bitter</key><string>4.3</string>
+		<key>Great Northern Porter</key><string>5.6</string>
+		<key>Great Wall</key><string>4.6</string>
+		<key>Greenall's Cheshire English Pub Beer</key><string>5</string>
+		<key>Grolsch</key><string>5</string>
+		<key>Grolsch Lager Beer</key><string>5</string>
+		<key>Guiness Draught - Bottle</key><string>4.2</string>
+		<key>Guinness Black Lager</key><string>4.5</string>
+		<key>Guinness Extra Stout</key><string>5</string>
+		<key>Gumball head</key><string>4.5</string>
+		<key>Hacker Pschorr</key><string>5.8</string>
+		<key>Haffenreffer Private Stock</key><string>6.9</string>
+		<key>Hamm's Beer</key><string>4.7</string>
+		<key>Hamm's Golden Draft</key><string>4.7</string>
+		<key>Hamm's Light</key><string>4.1</string>
+		<key>Hamm's Special Light</key><string>4.1</string>
+		<key>Hammerhead</key><string>5.8</string>
+		<key>Happy Camper IPA</key><string>6.6</string>
+		<key>Harp</key><string>4.6</string>
+		<key>Harpoon Ale</key><string>5</string>
+		<key>Harpoon Dark</key><string>5.5</string>
+		<key>Harpoon IPA</key><string>5.9</string>
+		<key>Harpoon UFO</key><string>4.8</string>
+		<key>Hefeweizen</key><string>5</string>
+		<key>Hefeweizen</key><string>5.2</string>
+		<key>Hefeweizen</key><string>5.6</string>
+		<key>Heineken</key><string>5.4</string>
+		<key>Heineken Lager Beer</key><string>5</string>
+		<key>Heineken Light</key><string>3.5</string>
+		<key>Heineken Special Dark Beer</key><string>5.1</string>
+		<key>Hell's Belle</key><string>7</string>
+		<key>Hellroaring Amber Lager</key><string>5.1</string>
+		<key>High Rollers Wheat</key><string>5.3</string>
+		<key>Highlander Premium Beer</key><string>4.6</string>
+		<key>Highlander Scottish Ale</key><string>4.6</string>
+		<key>Hoegaarden</key><string>5</string>
+		<key>Holy Moses White Ale</key><string>5.4</string>
+		<key>Honey Ale</key><string>8</string>
+		<key>Honey Brown</key><string>4.5</string>
+		<key>Honey Rye</key><string>5</string>
+		<key>Honey Weiss</key><string>4.8</string>
+		<key>Hop Madness</key><string>7.5</string>
+		<key>Hop Ottin'</key><string>7</string>
+		<key>Hophead IPA</key><string>5.6</string>
+		<key>Horizon Red Ale</key><string>5.7</string>
+		<key>Hornsby Draft Cider</key><string>5.5</string>
+		<key>Hudepohl Amber Lager</key><string>4.2</string>
+		<key>Hudy Delight</key><string>5</string>
+		<key>Hudy Light</key><string>3.8</string>
+		<key>Hurricane High Gravity Lager</key><string>8.1</string>
+		<key>I.C. Light</key><string>4.1</string>
+		<key>Icehouse</key><string>5.5</string>
+		<key>Imperial Dortmunder</key><string>7.5</string>
+		<key>Imperial IPA</key><string>8.5</string>
+		<key>Imperial Stout</key><string>9</string>
+		<key>Independence Ale</key><string>6</string>
+		<key>India Pale Ale</key><string>5.8</string>
+		<key>India Pale Ale</key><string>6</string>
+		<key>India Pale Ale</key><string>6.7</string>
+		<key>India Pale Ale</key><string>6.8</string>
+		<key>Indiana Amber</key><string>5.3</string>
+		<key>Instigator Doppelbock</key><string>8</string>
+		<key>IPA</key><string>5.5</string>
+		<key>Irish Pale Ale</key><string>5.5</string>
+		<key>Iron City Lager</key><string>4.5</string>
+		<key>Isolation</key><string>6</string>
+		<key>Jai Alai</key><string>7.5</string>
+		<key>Jockamo</key><string>6.5</string>
+		<key>Jubelale</key><string>6.7</string>
+		<key>Kalamazoo Stout</key><string>6.5</string>
+		<key>Karlovacko Croatia</key><string>5</string>
+		<key>Kentucky Ale Bourbon Barrel</key><string>8.2</string>
+		<key>Keystone Ice</key><string>5.9</string>
+		<key>Keystone Light</key><string>4.2</string>
+		<key>Keystone Premium</key><string>4.4</string>
+		<key>Kilarney's Red Lager</key><string>5</string>
+		<key>Killian's</key><string>4.9</string>
+		<key>Kilt Lifter Scottish Style Ale</key><string>6</string>
+		<key>Kiltlifter</key><string>6</string>
+		<key>Kingfisher beer</key><string>4.8</string>
+		<key>Kipling Light Lager</key><string>3.4</string>
+		<key>Kirin Beer</key><string>6.8</string>
+		<key>Kirkland Signature Pale Ale</key><string>6.5</string>
+		<key>Kolsch</key><string>4.5</string>
+		<key>Kolsch</key><string>5</string>
+		<key>Konig Pilsener</key><string>4.9</string>
+		<key>Kraftig Lager (William K. Busch)</key><string>4.6</string>
+		<key>Kronenbourg Beer</key><string>5.1</string>
+		<key>Kronenbourg Imported Dark Beer</key><string>5</string>
+		<key>La Fin du Monde</key><string>9</string>
+		<key>Labatt Blue</key><string>5</string>
+		<key>Labatt Blue Light</key><string>4</string>
+		<key>Labatt Blue Light Lime</key><string>4</string>
+		<key>Labatt's 50</key><string>5.3</string>
+		<key>Lager</key><string>4.4</string>
+		<key>Lagunitas India Pale Ale</key><string>6.2</string>
+		<key>Lagunitas IPA</key><string>6.2</string>
+		<key>Lake Erie Monster</key><string>9.1</string>
+		<key>Landshark Lager</key><string>4.7</string>
+		<key>Leffe Blonde</key><string>6.6</string>
+		<key>Leinenkugel Amber Light</key><string>4.1</string>
+		<key>Leinenkugel Creamy Dark</key><string>4.9</string>
+		<key>Leinenkugel Honey Weiss</key><string>4.9</string>
+		<key>Leinenkugel Light</key><string>4.2</string>
+		<key>Leinenkugel Northwoods Lager</key><string>4.9</string>
+		<key>Leinenkugel Original</key><string>4.6</string>
+		<key>Leinenkugel Original</key><string>4.7</string>
+		<key>Leinenkugel Red</key><string>4.9</string>
+		<key>Leinenkugel Summer Shandy</key><string>4.2</string>
+		<key>Leinenkugel's Sunset Wheat</key><string>4.9</string>
+		<key>Levity</key><string>5</string>
+		<key>Liberty Ale</key><string>6</string>
+		<key>Light</key><string>3.8</string>
+		<key>Light</key><string>4</string>
+		<key>Light Lager</key><string>3.6</string>
+		<key>Lindemans Cassis</key><string>3.5</string>
+		<key>Lindemans Framboise</key><string>4</string>
+		<key>Lindemans Kriek</key><string>3.5</string>
+		<key>Lindemans Lambic</key><string>4</string>
+		<key>Lindemans Pecheresse</key><string>2.5</string>
+		<key>Lindemans Pomme</key><string>3.5</string>
+		<key>Lindemans Pche</key><string>3.5</string>
+		<key>Little King's Cream Ale</key><string>5.5</string>
+		<key>Little King's Cream Ale</key><string>5.5</string>
+		<key>Little Kings Creame Ale</key><string>5.5</string>
+		<key>Loch Erie Scotch Ale</key><string>8.3</string>
+		<key>Locktender Lager</key><string>4.8</string>
+		<key>Lone Star</key><string>4.7</string>
+		<key>Long Hammer IPA</key><string>6.5</string>
+		<key>Long Trail Ale</key><string>4.6</string>
+		<key>Lord Chesterfields</key><string>5.4</string>
+		<key>Lorelei Dunkel Weizen</key><string>5.1</string>
+		<key>Lost Lake</key><string>5.5</string>
+		<key>Lowenbrau Dark</key><string>5</string>
+		<key>Lowenbrau Special Beer</key><string>5.2</string>
+		<key>Lowenbr_u</key><string>5.2</string>
+		<key>Lucky Bucket Certified Evil</key><string>9.6</string>
+		<key>Lucky Bucket IPA</key><string>6.3</string>
+		<key>Lucky Bucket Lager</key><string>4.5</string>
+		<key>Lucky Lager Force 8</key><string>8</string>
+		<key>Magnum Malt Liquor</key><string>5.6</string>
+		<key>Maple Nut Brown Ale</key><string>4.5</string>
+		<key>Marin Weiss</key><string>5</string>
+		<key>Market Street Wheat</key><string>5.3</string>
+		<key>Matt Brewing Co. Saranac White IPA</key><string>6</string>
+		<key>McEwans Scotch Ale</key><string>9.5</string>
+		<key>Michael Shea's</key><string>4.6</string>
+		<key>Michelob</key><string>5</string>
+		<key>Michelob Amber Boch</key><string>5.2</string>
+		<key>Michelob Amber Bock</key><string>5.2</string>
+		<key>Michelob Black ANDTan</key><string>5</string>
+		<key>Michelob Golden Draft</key><string>4.7</string>
+		<key>Michelob Golden Draft Light</key><string>4.1</string>
+		<key>Michelob Hefeweizen</key><string>5</string>
+		<key>Michelob Honey Lager</key><string>4.9</string>
+		<key>Michelob Light</key><string>4.3</string>
+		<key>Michelob Ultra</key><string>4.1</string>
+		<key>Michigan Brewing Company Nut Brown Ale</key><string>5</string>
+		<key>Michigan Brewing Company Wheatland Beer</key><string>5</string>
+		<key>Mickey's</key><string>5.6</string>
+		<key>Mickey's Fine Malt Liquor</key><string>5.6</string>
+		<key>Mickey's Ice</key><string>5.9</string>
+		<key>Milk Stout</key><string>6</string>
+		<key>Miller Genuine Draft</key><string>4.7</string>
+		<key>Miller Genuine Draft 64 / MGD 64</key><string>2.8</string>
+		<key>Miller Genuine Draft Light</key><string>4.2</string>
+		<key>Miller High Life</key><string>5.5</string>
+		<key>Miller High Life Light</key><string>4.2</string>
+		<key>Miller Ice Light</key><string>5.5</string>
+		<key>Miller Lite</key><string>4.2</string>
+		<key>Milwaukee Special Reserve Ice</key><string>5.9</string>
+		<key>Milwaukee's Best</key><string>4.5</string>
+		<key>Milwaukee's Best Ice</key><string>5.9</string>
+		<key>Milwaukee's Best Light</key><string>4.5</string>
+		<key>Mirror Pond Pale</key><string>5.3</string>
+		<key>Modelo Especial</key><string>4.4</string>
+		<key>Molson Canadian Beer</key><string>5.1</string>
+		<key>Molson Dry</key><string>5.5</string>
+		<key>Molson Golden Beer</key><string>6</string>
+		<key>Molson Ice</key><string>5.6</string>
+		<key>Molson Light</key><string>2.4</string>
+		<key>Molson XXX</key><string>7.3</string>
+		<key>Moondog ESB</key><string>5</string>
+		<key>Moose Drool Big Sky Brown Ale</key><string>4.2</string>
+		<key>Moosehead</key><string>5</string>
+		<key>Moosehead Canadian Lager Beer</key><string>5</string>
+		<key>Mothership</key><string>4.8</string>
+		<key>Mt. Tam Pale Ale</key><string>5</string>
+		<key>Murphy's Irish Red</key><string>5</string>
+		<key>Murphy's Stout</key><string>4</string>
+		<key>M_rzen</key><string>5.7</string>
+		<key>Nastro Azzuro Export Lager</key><string>5.1</string>
+		<key>National Bohemian beer</key><string>4.2</string>
+		<key>Natural Ice</key><string>5.9</string>
+		<key>Natural Light</key><string>4.2</string>
+		<key>Negra Modelo</key><string>5.3</string>
+		<key>New Belgium 1554</key><string>5.6</string>
+		<key>New Glarus Barley Wine</key><string>13.5</string>
+		<key>Newcastle Brown Ale</key><string>4.7</string>
+		<key>Nordik Wolf Light</key><string>4.7</string>
+		<key>Northern Golden Lager</key><string>4.5</string>
+		<key>Northern Honey Brown</key><string>5.2</string>
+		<key>Northern Special Light</key><string>4</string>
+		<key>Nosferatu</key><string>8</string>
+		<key>O'Doul's</key><string>0.4</string>
+		<key>O'Douls Amber</key><string>0.4</string>
+		<key>O'Keefe Canadian Beer</key><string>4.9</string>
+		<key>Oatmeal Stout</key><string>5</string>
+		<key>Oatmeal Stout</key><string>5.1</string>
+		<key>Oberon</key><string>6</string>
+		<key>Obsidian Stout</key><string>6.7</string>
+		<key>Ocktoberfest</key><string>5.1</string>
+		<key>Ohio City Oatmeal Stout</key><string>4.8</string>
+		<key>Oktoberfest</key><string>6.5</string>
+		<key>Old Dipsea Barleywine</key><string>9</string>
+		<key>Old Foghorn</key><string>9</string>
+		<key>Old Knucklehead</key><string>8.9</string>
+		<key>Old Milwaukee</key><string>4.5</string>
+		<key>Old Milwaukee Light</key><string>3.8</string>
+		<key>Old Style Beer</key><string>4.7</string>
+		<key>Olde English 800</key><string>5.9</string>
+		<key>Olde English 800 Ice</key><string>7.9</string>
+		<key>Olde English 800 Malt Liquor</key><string>5.9</string>
+		<key>Olympia Premium Lager</key><string>4.7</string>
+		<key>Orange Blossom Pilsner</key><string>11</string>
+		<key>Pabst</key><string>5</string>
+		<key>Pabst Blue Ribbon</key><string>5</string>
+		<key>Pabst Extra Light Low Alcohol</key><string>2.2</string>
+		<key>Pacifico Clara</key><string>4.5</string>
+		<key>Pale Ale</key><string>4.4</string>
+		<key>Pale Ale</key><string>5</string>
+		<key>Pale Ale</key><string>5.1</string>
+		<key>Pale Ale</key><string>5.5</string>
+		<key>Pale Ale</key><string>5.5</string>
+		<key>Pale Ale</key><string>5.7</string>
+		<key>Pale Ale</key><string>5.8</string>
+		<key>Pale Pale Ale</key><string>4.7</string>
+		<key>Palm beers</key><string>5.4</string>
+		<key>Palm Royale</key><string>7.5</string>
+		<key>Palm Speciale</key><string>5.4</string>
+		<key>Palone</key><string>6.9</string>
+		<key>Pandora's Bock</key><string>5.8</string>
+		<key>Paulaner Hefe-Weizen</key><string>5.5</string>
+		<key>Paulaner Original Munich</key><string>4.9</string>
+		<key>Paulaner Salvator</key><string>7.9</string>
+		<key>Pecan</key><string>5</string>
+		<key>Pete's Helles Lager</key><string>5</string>
+		<key>Pete's Oktoberfest</key><string>5.8</string>
+		<key>Pete's Red Rush</key><string>5.3</string>
+		<key>Pete's Strawberry Blonde</key><string>5</string>
+		<key>Pete's Summer Brew</key><string>4.7</string>
+		<key>Pete's Wicked Ale</key><string>5.3</string>
+		<key>Pete's Winter Brew</key><string>5.2</string>
+		<key>Peter's Brand (Union Export Brewery, Breda Holland; licensed to</key><string>5</string>
+		<key>Pilsener Urquell</key><string>4.4</string>
+		<key>Pilsner</key><string>5.3</string>
+		<key>Pine Mountain Pils</key><string>5.1</string>
+		<key>Pintail Ale</key><string>5.2</string>
+		<key>Point hand-crafted Belgian White</key><string>5.4</string>
+		<key>Point Reyes Porter</key><string>6</string>
+		<key>Polar Bear Pilsner</key><string>5.7</string>
+		<key>Poleeko Gold</key><string>5.5</string>
+		<key>Pomegranate Wheat</key><string>4.7</string>
+		<key>Pomegranate Wheat</key><string>4.7</string>
+		<key>Porter</key><string>4.5</string>
+		<key>Porter</key><string>5.5</string>
+		<key>Premium</key><string>4.4</string>
+		<key>Private Reserve</key><string>4.5</string>
+		<key>Prohibition Pils</key><string>5.1</string>
+		<key>Pumpkin Ale</key><string>5.4</string>
+		<key>Purple Haze</key><string>4.2</string>
+		<key>Quail Springs IPA</key><string>5.8</string>
+		<key>Rackhouse Ale</key><string>9.5</string>
+		<key>RAMSAY'S FAT LIP ALE</key><string>5.5</string>
+		<key>Rapid Red Ale</key><string>5.8</string>
+		<key>Red Ale</key><string>5.2</string>
+		<key>Red Dog</key><string>5</string>
+		<key>Red Lager</key><string>4.9</string>
+		<key>Red Strlpe Lager Beer</key><string>5</string>
+		<key>Redbridge (Gluten free beer)</key><string>4.8</string>
+		<key>Redhook Blonde Ale</key><string>5.4</string>
+		<key>Redhook ESB</key><string>5.8</string>
+		<key>Redhook Hefe-weizen</key><string>5.2</string>
+		<key>Redhook IPA</key><string>6.5</string>
+		<key>Redhook Nut Brown</key><string>5.6</string>
+		<key>Restoration</key><string>5</string>
+		<key>Rhinebecker</key><string>5</string>
+		<key>Rich ANDDan's Rye IPA</key><string>6.9</string>
+		<key>Rock's Rye</key><string>5.7</string>
+		<key>Rockefeller Bock</key><string>7.5</string>
+		<key>Rolling Rock Extra Pale</key><string>4.6</string>
+		<key>Rolling Rock Light</key><string>3.7</string>
+		<key>Rolling Rock Premium Beer</key><string>4.5</string>
+		<key>Roscoe's Hop House</key><string>5.5</string>
+		<key>Rubicon</key><string>5.8</string>
+		<key>Ruby</key><string>4.1</string>
+		<key>Ruination IPA</key><string>7.7</string>
+		<key>Rye of the Tiger</key><string>7.5</string>
+		<key>Saint Arnold Amber Ale</key><string>5.5</string>
+		<key>Saint Arnold brown Ale</key><string>5.3</string>
+		<key>Saint Arnold Christmas Ale</key><string>7</string>
+		<key>Saint Arnold Divine Reserve *</key><string>8.9</string>
+		<key>Saint Arnold Elissa IPA</key><string>6.6</string>
+		<key>Saint Arnold Fancy Lawnmower</key><string>4.9</string>
+		<key>Saint Arnold Oktoberfest</key><string>6</string>
+		<key>Saint Arnold Spring Bock</key><string>6.4</string>
+		<key>Saint Arnold Summer Pils</key><string>4.9</string>
+		<key>Saint Arnold Weedwacker</key><string>4.9</string>
+		<key>Saint Arnold Winter Stout</key><string>5.6</string>
+		<key>Salvator</key><string>7.5</string>
+		<key>Sam Adams Alpine Spring</key><string>5.5</string>
+		<key>Sam Adams Boston Ale</key><string>4.9</string>
+		<key>Sam Adams Boston Lager</key><string>4.8</string>
+		<key>Sam Adams Cherry Wheat</key><string>5.2</string>
+		<key>Sam Adams Cream Stout</key><string>4.7</string>
+		<key>Sam Adams Double Bock</key><string>8.5</string>
+		<key>Sam Adams Golden Pilsner</key><string>4.6</string>
+		<key>Sam Adams IPA</key><string>5.9</string>
+		<key>Sam Adams Light</key><string>4.1</string>
+		<key>Sam Adams Noble Pils</key><string>4.9</string>
+		<key>Sam Adams Octoberfest</key><string>5.7</string>
+		<key>Sam Adams Pale Ale</key><string>5.3</string>
+		<key>Sam Adams Spring Ale</key><string>5.2</string>
+		<key>Sam Adams Summer Ale</key><string>5.2</string>
+		<key>Sam Adams Triple Bock</key><string>17.5</string>
+		<key>Sam Adams Winter Lager</key><string>5.8</string>
+		<key>Samichlaus Beer (Santa Claus Beer)</key><string>14</string>
+		<key>Samuel Adams --Latitude- beer</key><string>6</string>
+		<key>Samuel Adams Imperial Stout</key><string>9.2</string>
+		<key>Samuel Adams Imperial White</key><string>10.3</string>
+		<key>Samuel Adams Wee Heavy</key><string>10</string>
+		<key>SAN MIGUEL BEER</key><string>4.5</string>
+		<key>Sapporo Reserve</key><string>5.2</string>
+		<key>Satsuma</key><string>5.1</string>
+		<key>Save Our Shore</key><string>7</string>
+		<key>Schaefer Beer</key><string>4.6</string>
+		<key>Schells Stout</key><string>5</string>
+		<key>Schlitz Beer</key><string>4.7</string>
+		<key>Schlitz Light</key><string>4.2</string>
+		<key>Schlitz Malt Liquor</key><string>6.2</string>
+		<key>Schorsch Bock 43</key><string>43</string>
+		<key>Schwarzbier</key><string>5.3</string>
+		<key>Sheaf Stout</key><string>5.2</string>
+		<key>Shiner 102</key><string>6.2</string>
+		<key>Shiner Blonde</key><string>4.4</string>
+		<key>Shiner Bock</key><string>4.4</string>
+		<key>Shiner Bohemian Black Lager</key><string>4.9</string>
+		<key>Shiner Hefewizen</key><string>5.4</string>
+		<key>Shiner Light</key><string>3.9</string>
+		<key>Shiner Light Blonde</key><string>4.2</string>
+		<key>Shipyard Export</key><string>5.1</string>
+		<key>Shipyard IPA</key><string>5.8</string>
+		<key>Shock Top</key><string></string>
+		<key>Shock Top Belgian White</key><string>5.2</string>
+		<key>Shock Top Lemon Shandy</key><string>4.2</string>
+		<key>Shock Top Pumpkin Wheat</key><string>5.2</string>
+		<key>Shock Top Raspberry Wheat</key><string>5.2</string>
+		<key>Shock Top Wheat IPA</key><string>5.8</string>
+		<key>Sierra Nevada Bigfoot</key><string>9.9</string>
+		<key>Sierra Nevada Celebration</key><string>6.6</string>
+		<key>Sierra Nevada Glissade</key><string>6.4</string>
+		<key>Sierra Nevada Pale Ale</key><string>5.6</string>
+		<key>Sierra Nevada Porter</key><string>5.7</string>
+		<key>Sierra Nevada Stout</key><string>6.4</string>
+		<key>Sierra Nevada Summerfest</key><string>4.9</string>
+		<key>Sierra Nevada Torpedo</key><string>7.2</string>
+		<key>Sierra Nevada Wheat</key><string>4.7</string>
+		<key>Signature Stroh Beer</key><string>4.8</string>
+		<key>Simpler Times Pilsner</key><string>5.5</string>
+		<key>Singha</key><string>5</string>
+		<key>Skinny Dip</key><string>4.2</string>
+		<key>Smithwicks Ale</key><string>5</string>
+		<key>Snake Pit</key><string>5.8</string>
+		<key>Snow Beer</key><string>3.5</string>
+		<key>Snow Cap Ale</key><string>7</string>
+		<key>SnowGhost Winter Lager</key><string>5.9</string>
+		<key>Sol Cerveza Especial</key><string>4.1</string>
+		<key>Spaten Munich Special Dark Beer</key><string>6.6</string>
+		<key>Spaten Optimator</key><string>7.6</string>
+		<key>Special Export</key><string>5</string>
+		<key>Special Export Light</key><string>4.4</string>
+		<key>Spotted Cow</key><string>4.8</string>
+		<key>Spring Run IPA</key><string>6</string>
+		<key>St. Ides Malt Liquor</key><string>8.2</string>
+		<key>St. Pauli Girl</key><string>4.9</string>
+		<key>St. Pauli Girl Dark</key><string>4.8</string>
+		<key>St. Pauli Girl N.A.</key><string>0.2</string>
+		<key>Stag</key><string>5.2</string>
+		<key>Stag Lager</key><string>5.5</string>
+		<key>Staub Dark</key><string>4.1</string>
+		<key>Staub Light</key><string>3.2</string>
+		<key>Staub Premium</key><string>4.1</string>
+		<key>Steel Reserve 211</key><string>8.1</string>
+		<key>Steendonck</key><string>5</string>
+		<key>Steinlager beers of New Zealand</key><string>5</string>
+		<key>Stella Artois</key><string>5.2</string>
+		<key>Stone IPA</key><string>6.9</string>
+		<key>Stone Old Guardian</key><string>9.9</string>
+		<key>Stone Pale Ale</key><string>5.4</string>
+		<key>Stone Smoked Porter</key><string>5.9</string>
+		<key>Strawberry</key><string>4.2</string>
+		<key>Stroh's Beer</key><string>4.6</string>
+		<key>Stroh's Light</key><string>4.4</string>
+		<key>Summer Ale</key><string>4.7</string>
+		<key>Summer Brew</key><string>3.5</string>
+		<key>Summer Brew</key><string>3.5</string>
+		<key>Summer Shandy</key><string>4.2</string>
+		<key>Summit Hefe Weizen</key><string>4.8</string>
+		<key>Summit IPA</key><string>6.4</string>
+		<key>Summit Maibock</key><string>6.5</string>
+		<key>Summit Oktoberfest</key><string>7.3</string>
+		<key>Summit Pale Ale</key><string>5.2</string>
+		<key>Summit Pilsener</key><string>4.8</string>
+		<key>Summit Winter Ale</key><string>6.1</string>
+		<key>Sunset Wheat</key><string>4.8</string>
+		<key>Suntory Draft Beer</key><string>4.6</string>
+		<key>Superfly</key><string>7.5</string>
+		<key>Superior Imported Beer</key><string>4.3</string>
+		<key>Tactical Nuclear Penguin</key><string>32</string>
+		<key>Taj Mahal Premium Lager</key><string>4.5</string>
+		<key>Tecate / Cerveza Tecate</key><string>4.4</string>
+		<key>Tempus Fugit Ale</key><string>9.5</string>
+		<key>Terminator</key><string>6.4</string>
+		<key>The Doppelrock</key><string>7.8</string>
+		<key>The Stein Bach</key><string>7.5</string>
+		<key>The Wright Pils</key><string>5.3</string>
+		<key>Third Coast Old Ale</key><string>10.2</string>
+		<key>Thomas Jeffe-Weizen</key><string>4.6</string>
+		<key>Thos Cooper ANDSons Adelaide Lager</key><string>4.2</string>
+		<key>Thos Cooper ANDSons Real Ale</key><string>6.8</string>
+		<key>Thos Cooper ANDSons Stout</key><string>7.1</string>
+		<key>Tiger from Singapore</key><string>5</string>
+		<key>Tilted Kilt</key><string>6.3</string>
+		<key>Tolly Origlnal Premium Ale</key><string>4.9</string>
+		<key>Triple Bag</key><string>9.2</string>
+		<key>Trippel Beer</key><string>7.8</string>
+		<key>Troegs Plale</key><string>5.4</string>
+		<key>Trumer Pilser</key><string>4.9</string>
+		<key>Tsingtao</key><string>4.7</string>
+		<key>Tsingtao Beer</key><string>4.8</string>
+		<key>Tuborg Deluxe Dark Export</key><string>5.1</string>
+		<key>Tuborg Export Quality</key><string>5</string>
+		<key>Turbodog</key><string>5.6</string>
+		<key>Two Hearted Ale</key><string>7</string>
+		<key>UBU Ale</key><string>7</string>
+		<key>Vanilla Porter - Breckenridge Brewery</key><string>4.7</string>
+		<key>Victoria Bitter (VB)</key><string>4.6</string>
+		<key>Wachusett Blueberry</key><string>4.5</string>
+		<key>Wachusett Country Ale</key><string>5.1</string>
+		<key>Wachusett country Ale</key><string>5.1</string>
+		<key>Warsteiner Premium Dunkel</key><string>4.8</string>
+		<key>Warsteiner Premium Fresh</key><string>0</string>
+		<key>Warsteiner Premium Verum</key><string>4.8</string>
+		<key>Watney's Red Barrel Beer</key><string>3.9</string>
+		<key>Weinhard's Amber Ale</key><string>5.3</string>
+		<key>Weinhard's Amber Light</key><string>4.2</string>
+		<key>Weinhard's Blonde Lager</key><string>5.1</string>
+		<key>Weinhard's Dark</key><string>4.8</string>
+		<key>Weinhard's Hefeweizen</key><string>4.9</string>
+		<key>Weinhard's Pale Ale</key><string>4.6</string>
+		<key>Weinhard's Private Reserve</key><string>4.8</string>
+		<key>Wheat</key><string>4.2</string>
+		<key>Wheatfish</key><string>4.8</string>
+		<key>Widmer Blonde Ale</key><string>4.3</string>
+		<key>Widmer Drop top</key><string>5</string>
+		<key>Widmer Hefeweizen</key><string>4.7</string>
+		<key>Widmer Oktoberfest</key><string>5</string>
+		<key>Widmer Pale Ale</key><string>5</string>
+		<key>Widmer Sommerbr_</key><string>4.8</string>
+		<key>Widmer Widberry</key><string>4.6</string>
+		<key>Widmer Winternacht</key><string>7</string>
+		<key>Wild Blue Lager</key><string>8</string>
+		<key>Wild Huckleberry Wheat</key><string>4.6</string>
+		<key>Wildcats Premium Beer</key><string>5.1</string>
+		<key>Winter Lager</key><string>6.5</string>
+		<key>Winter Solstice</key><string>6.9</string>
+		<key>Wisconsin Amber</key><string>5.2</string>
+		<key>WIT Till Next Year!</key><string>4.8</string>
+		<key>Wit's End</key><string>4.8</string>
+		<key>Witches Brew Golden Ale 9.3%</key><string>9.3</string>
+		<key>Wolfhound Stout</key><string>4.8</string>
+		<key>Wolters Pilsener Premium</key><string>4.9</string>
+		<key>Woodtooth Porter</key><string>6.2</string>
+		<key>Wurtzburger Hofbrau Light</key><string>5.4</string>
+		<key>Wurzburger Hofbrau</key><string>5.4</string>
+		<key>Xingu a Brazillian Black Beer</key><string>4.6</string>
+		<key>Yanjing</key><string>5</string>
+		<key>Yellow Tail Pale Ale</key><string>5.2</string>
+		<key>York Street Bitter</key><string>5.5</string>
+		<key>Yuengling Ale</key><string>5</string>
+		<key>Yuengling Lager</key><string>4.4</string>
+		<key>Yuengling Light</key><string>3.8</string>
+		<key>Yuengling Porter</key><string>4.5</string>
+		<key>Yuengling Premium Beer</key><string>4.4</string>
+		<key>Ziegenbock (TX)</key><string>4</string>
+		<key>ZYWIEC</key><string>5.6</string>
+		<key>Zywiec</key><string>5.8</string>
+</dict>
+</plist>
