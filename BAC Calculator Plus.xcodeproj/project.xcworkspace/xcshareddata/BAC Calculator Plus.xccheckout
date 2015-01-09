@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C9DC40CB-378B-4465-8B08-1A0FC815D31F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BAC Calculator Plus</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>266DE3476C9B2239F9F09841030C1EF7964B639B</key>
+		<string>https://github.com/turners1110/BAC-Calculator-Plus.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BAC Calculator Plus.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>266DE3476C9B2239F9F09841030C1EF7964B639B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/turners1110/BAC-Calculator-Plus.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>266DE3476C9B2239F9F09841030C1EF7964B639B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>266DE3476C9B2239F9F09841030C1EF7964B639B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BAC%20Calculator%20Plus</string>
+		</dict>
+	</array>
+</dict>
+</plist>

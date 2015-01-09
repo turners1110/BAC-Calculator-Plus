@@ -328,6 +328,14 @@
                     _bacLabel.text = calculatedBAC;
                     self.pastDate = now;
                 }
+                if (_beerSize.selectedSegmentIndex == 3) {
+                    
+                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 1.5) * 1.2)/(0.58 * (Weight/2.2))) - (0.013 * 0);
+                    float maleBAC = previousBAC + BAC;
+                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
+                    _bacLabel.text = calculatedBAC;
+                    self.pastDate = now;
+                }
                 
             }
             else{
@@ -356,6 +364,15 @@
                     _bacLabel.text = calculatedBAC;
                     self.pastDate = now;
                 }
+                if (_beerSize.selectedSegmentIndex == 3) {
+                    
+                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 1.5) * 1.2)/(0.58 * (Weight/2.2))) - (0.013 * 0);
+                    float maleBAC = previousBAC + BAC;
+                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
+                    _bacLabel.text = calculatedBAC;
+                    self.pastDate = now;
+                }
+
             }
         }
         if (_poundOrKilogram.selectedSegmentIndex == 1){
@@ -385,6 +402,14 @@
                     _bacLabel.text = calculatedBAC;
                     self.pastDate = now;
                 }
+                if (_beerSize.selectedSegmentIndex == 3) {
+                    
+                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 1.5) * 1.2)/(0.58 * (Weight/2.2))) - (0.013 * 0);
+                    float maleBAC = previousBAC + BAC;
+                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
+                    _bacLabel.text = calculatedBAC;
+                    self.pastDate = now;
+                }
                 
             }
             else{
@@ -408,6 +433,14 @@
                 if (_beerSize.selectedSegmentIndex == 2) {
                     
                     float BAC = ((.806 * (1.6667 *(.01)* alcContent* 40) * 1.2)/(0.58 * (Weight))) - (0.013 * 0);
+                    float maleBAC = previousBAC + BAC;
+                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
+                    _bacLabel.text = calculatedBAC;
+                    self.pastDate = now;
+                }
+                if (_beerSize.selectedSegmentIndex == 3) {
+                    
+                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 1.5) * 1.2)/(0.58 * (Weight/2.2))) - (0.013 * 0);
                     float maleBAC = previousBAC + BAC;
                     NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
                     _bacLabel.text = calculatedBAC;
@@ -445,6 +478,14 @@
                     _bacLabel.text = calculatedBAC;
                     self.pastDate = now;
                 }
+                if (_beerSize.selectedSegmentIndex == 3) {
+                    
+                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 1.5) * 1.2)/(0.58 * (Weight/2.2))) - (0.013 * 0);
+                    float maleBAC = previousBAC + BAC;
+                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
+                    _bacLabel.text = calculatedBAC;
+                    self.pastDate = now;
+                }
                 
             }
             else{
@@ -468,6 +509,14 @@
                 if (_beerSize.selectedSegmentIndex == 2) {
                     
                     float BAC = ((.806 * (1.6667 *(.01)* alcContent* 40) * 1.2)/(0.49 * (Weight/2.2))) - (0.014 * 0);
+                    float maleBAC = previousBAC + BAC;
+                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
+                    _bacLabel.text = calculatedBAC;
+                    self.pastDate = now;
+                }
+                if (_beerSize.selectedSegmentIndex == 3) {
+                    
+                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 1.5) * 1.2)/(0.58 * (Weight/2.2))) - (0.013 * 0);
                     float maleBAC = previousBAC + BAC;
                     NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
                     _bacLabel.text = calculatedBAC;
@@ -502,6 +551,14 @@
                     _bacLabel.text = calculatedBAC;
                     self.pastDate = now;
                 }
+                if (_beerSize.selectedSegmentIndex == 3) {
+                    
+                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 1.5) * 1.2)/(0.58 * (Weight/2.2))) - (0.013 * 0);
+                    float maleBAC = previousBAC + BAC;
+                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
+                    _bacLabel.text = calculatedBAC;
+                    self.pastDate = now;
+                }
                 
             }
             else{
@@ -525,6 +582,14 @@
                 if (_beerSize.selectedSegmentIndex == 2) {
                     
                     float BAC = ((.806 * (1.6667 *(.01)* alcContent* 40) * 1.2)/(0.49 * (Weight))) - (0.014 * 0);
+                    float maleBAC = previousBAC + BAC;
+                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
+                    _bacLabel.text = calculatedBAC;
+                    self.pastDate = now;
+                }
+                if (_beerSize.selectedSegmentIndex == 3) {
+                    
+                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 1.5) * 1.2)/(0.58 * (Weight/2.2))) - (0.013 * 0);
                     float maleBAC = previousBAC + BAC;
                     NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
                     _bacLabel.text = calculatedBAC;
@@ -672,6 +737,8 @@
     self.pastDate = now;
 }
 - (IBAction)resetButton:(id)sender {
+    NSDate * now = [NSDate date];
     _bacLabel.text = @"0.00";
+    self.pastDate = now;
 }
 @end
