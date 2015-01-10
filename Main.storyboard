@@ -298,7 +298,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="521"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPS-yZ-a1q">
-                                <rect key="frame" x="0.0" y="5" width="320" height="563"/>
+                                <rect key="frame" x="0.0" y="-11" width="320" height="563"/>
                                 <state key="normal">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -366,11 +366,6 @@
                                     <action selector="drinkPressed:" destination="Ed0-hw-tTD" eventType="touchUpInside" id="cQ2-ay-arm"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weight" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="byl-3D-do2">
-                                <rect key="frame" x="20" y="104" width="63" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
-                            </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WB7-fy-jpI">
                                 <rect key="frame" x="89" y="40" width="75" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -386,20 +381,13 @@
                                     <action selector="checkBAC:" destination="Ed0-hw-tTD" eventType="touchUpInside" id="Jhk-qY-Ydn"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="x9B-5w-jtm">
-                                <rect key="frame" x="20" y="75" width="152" height="29"/>
-                                <segments>
-                                    <segment title="Male"/>
-                                    <segment title="Female"/>
-                                </segments>
-                            </segmentedControl>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BAC:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5z-Be-6Rr">
                                 <rect key="frame" x="20" y="46" width="40" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="j6j-Yd-N2o">
-                                <rect key="frame" x="197" y="75" width="107" height="29"/>
+                                <rect key="frame" x="110" y="75" width="107" height="29"/>
                                 <segments>
                                     <segment title="Beer"/>
                                     <segment title="Liquor"/>
@@ -418,25 +406,18 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Drink Size (oz):" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neP-yN-uNB">
-                                <rect key="frame" x="112" y="138" width="97" height="21"/>
+                                <rect key="frame" x="112" y="114" width="97" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7CY-w3-D9T">
-                                <rect key="frame" x="72" y="160" width="183" height="29"/>
+                                <rect key="frame" x="72" y="136" width="183" height="29"/>
                                 <segments>
                                     <segment title="12"/>
                                     <segment title="20"/>
                                     <segment title="40"/>
                                     <segment title="Shot"/>
-                                </segments>
-                            </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cdN-sl-LI3">
-                                <rect key="frame" x="81" y="104" width="91" height="29"/>
-                                <segments>
-                                    <segment title="Lbs"/>
-                                    <segment title="Kg"/>
                                 </segments>
                             </segmentedControl>
                         </subviews>
@@ -451,11 +432,8 @@
                         <outlet property="bacLabel" destination="WB7-fy-jpI" id="QWL-yk-VsO"/>
                         <outlet property="beerSize" destination="7CY-w3-D9T" id="2Gz-hY-v6K"/>
                         <outlet property="beerTable" destination="4qt-lE-csL" id="d04-oY-8SM"/>
-                        <outlet property="maleOrFemale" destination="x9B-5w-jtm" id="8C2-gS-3Xl"/>
-                        <outlet property="poundOrKilogram" destination="cdN-sl-LI3" id="KQR-nW-rfq"/>
                         <outlet property="searchBar" destination="vID-PH-oM9" id="F2b-7W-4er"/>
                         <outlet property="searchDisplayController" destination="5mB-2Y-RwJ" id="B6p-jl-p6i"/>
-                        <outlet property="weightEntered" destination="byl-3D-do2" id="T8m-SU-Ra2"/>
                         <outlet property="wineTable" destination="Brd-Zg-Jkf" id="2cr-5Z-pI7"/>
                     </connections>
                 </viewController>

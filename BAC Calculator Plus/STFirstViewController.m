@@ -81,7 +81,8 @@
         STProfile *profile = [appDel.Profile objectAtIndex: last];
         _WEIGHT = profile.weight;
         NSLog(@"%@", profile.weight);
-        _GENDER = profile.gender;
+        _MALE = profile.MALE;
+        _metric= profile.metric;
     }
     
     
@@ -129,32 +130,23 @@
     float time = [_timeEntered.text floatValue];
     
     float weight = [_WEIGHT floatValue];
-    float BAC = weight *drinkNumber;
-
-    if ( [_GENDER  isEqual: @"male"]) {
-        BAC = BAC - (.015 * time);
-        if (BAC < 0) {
-             BAC = 0;
-        }
-        if (BAC > 1){
-            BAC = 1;
-        }
-
-
-        _FinalBac = [NSString stringWithFormat:@"%.3f", BAC];
+    
+    if (_MALE == 1) {
+        _rateOfElimination = .015;
+        _WaterConst = .58;
     }
     else{
-        BAC = BAC - (.017 * time);
-        if (BAC < 0) {
-            BAC = 0;
-        }
-        if (BAC > 1){
-            BAC = 1;
-        }
-        
-        
-        _FinalBac = [NSString stringWithFormat:@"%.3f", BAC];
+        _rateOfElimination = .017;
+        _WaterConst = .49;
     }
+
+    
+    float BAC =((.806* drinkNumber *1.2))/(_WaterConst * weight) - (_rateOfElimination * time);
+    
+    
+    
+    
+    _FinalBac = [NSString stringWithFormat:@"%.3f", BAC];
     
     float finalBAC = [_FinalBac floatValue];
     

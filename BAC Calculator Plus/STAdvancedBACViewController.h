@@ -31,4 +31,14 @@
 - (IBAction)drinkPressed:(id)sender;
 - (IBAction)selectedAlcohol:(id)sender;
 @property (strong, nonatomic) NSString *weightLabel;
+
+@property float drinkSize;
+@property float metric;
+@property float rateOfElimination;
+@property float WaterConst;
+@property float BAC;
+@property (strong, nonatomic) NSString* WEIGHT;
+@property float MALE;
+
 @end
+

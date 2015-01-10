@@ -25,10 +25,9 @@
 @end
 
 @implementation STAdvancedBACViewController{
-    //    STAppDelegate *appDel;
+        STAppDelegate *appDel;
     
 }
-
 
 
 @synthesize brand, keys, filteredNames, searchController, beerValues, beerKeys, wineType, wineKeys, WineValues, wineFiltered;
@@ -47,62 +46,51 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    appDelegate = [[UIApplication sharedApplication]delegate];
-    
+   //  appDelegate = [[UIApplication sharedApplication]delegate];
     UITableView *tableView = (id)[self.view viewWithTag:1];
-    
     UITableView *wineTableVIew = (id)[self.view viewWithTag:3];
-    
     [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
-    
     [wineTableVIew registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
-    
     NSString *path = [[NSBundle mainBundle] pathForResource:@"BeerList" ofType:@"plist"];
-    
     brand = [NSDictionary dictionaryWithContentsOfFile:path];
-    
-    
     keys = [[brand allKeys]sortedArrayUsingSelector:@selector(compare:)];
-    
     NSString *winepath = [[NSBundle mainBundle] pathForResource:@"LiquorCheck" ofType:@"plist"];
-    
     wineType = [NSDictionary dictionaryWithContentsOfFile:winepath];
-    
     wineKeys = [[wineType allKeys]sortedArrayUsingSelector:@selector(compare:)];
-    
     filteredNames = [[NSMutableArray alloc]init];
-    
-    
     searchController = [[UISearchDisplayController alloc]init];
-    
     searchController.searchResultsDataSource = self;
-    
     NSString *path2 = [[NSBundle mainBundle] pathForResource:@"CHECK" ofType:@"plist"];
-    
     NSString *winePath2 = [[NSBundle mainBundle] pathForResource:@"Liquor" ofType:@"plist"];
-    
     beerValues = [NSDictionary dictionaryWithContentsOfFile:path2];
-    
     WineValues = [NSDictionary dictionaryWithContentsOfFile:winePath2];
-    
     beerKeys = [[beerValues allKeys] sortedArrayUsingSelector:@selector(compare:)];
-    
-    
     tableView.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"MetalTable2.png"]];
-    
     [tableView setSectionIndexColor:[UIColor blueColor]];
     [tableView setSectionIndexBackgroundColor:[UIColor clearColor]];
     
-    //    appDel = (STAppDelegate *) [[UIApplication sharedApplication] delegate];
+    appDel = (STAppDelegate *) [[UIApplication sharedApplication] delegate];
+    
     [_beerTable reloadData];
     [_wineTable reloadData];
+    
+    
+    
 }
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    //    STProfile *profile = [appDel.profiles objectAtIndex:0];
-    //    _weightLabel = profile.weight;
-}
+    float last = [appDel.Profile count];
+    last--;
+    if (last >= 0) {
+        STProfile *profile = [appDel.Profile objectAtIndex: last];
+        _WEIGHT = profile.weight;
+        _MALE = profile.MALE;
+        _metric= profile.metric;
+        NSLog(@"%@", profile.weight);
+        //_GENDER = profile.gender;
 
+}
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -284,323 +272,61 @@
 - (IBAction)drinkPressed:(id)sender {
     NSLog(@"%lu", (unsigned long)filteredNames.count);
     NSDate * now = [NSDate date];
-    //    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    //    [formatter setDateFormat:@"hh:mm:ss:SSS"];
-    //
-    //    NSString *currentTime = [formatter stringFromDate:now];
-    //    Put time differential to chanfe Bac time
     
     NSTimeInterval distanceBetweenDates = [now timeIntervalSinceDate:self.pastDate];
     double secondsInAnHour = 3600;
     float hoursBetweenDates = distanceBetweenDates / secondsInAnHour;
-    
-    
     float previousBAC = [_bacLabel.text floatValue];
+    float Weight = [_WEIGHT floatValue];
     
-    float Weight = [_weightEntered.text floatValue];
     float alcContent = [_alcoholContent floatValue];
-    if (_maleOrFemale.selectedSegmentIndex == 0) {
-        
-        if (_poundOrKilogram.selectedSegmentIndex == 0) {
-            if (hoursBetweenDates > 0) {
-                if (_beerSize.selectedSegmentIndex == 0) {
-                    
-                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 12) * 1.2)/(0.58 * (Weight/2.2))) - (0.013 * hoursBetweenDates);
-                    float maleBAC = previousBAC + BAC;
-                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
-                    _bacLabel.text = calculatedBAC;
-                    self.pastDate = now;
-                    
-                }
-                if (_beerSize.selectedSegmentIndex == 1) {
-                    
-                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 20) * 1.2)/(0.58 * (Weight/2.2))) - (0.013 * hoursBetweenDates);
-                    float maleBAC = previousBAC + BAC;
-                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
-                    _bacLabel.text = calculatedBAC;
-                    self.pastDate = now;
-                }
-                if (_beerSize.selectedSegmentIndex == 2) {
-                    
-                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 40) * 1.2)/(0.58 * (Weight/2.2))) - (0.013 * hoursBetweenDates);
-                    float maleBAC = previousBAC + BAC;
-                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
-                    _bacLabel.text = calculatedBAC;
-                    self.pastDate = now;
-                }
-                if (_beerSize.selectedSegmentIndex == 3) {
-                    
-                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 1.5) * 1.2)/(0.58 * (Weight/2.2))) - (0.013 * 0);
-                    float maleBAC = previousBAC + BAC;
-                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
-                    _bacLabel.text = calculatedBAC;
-                    self.pastDate = now;
-                }
-                
-            }
-            else{
-                if (_beerSize.selectedSegmentIndex == 0) {
-                    
-                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 12) * 1.2)/(0.58 * (Weight/2.2))) - (0.013 * 0);
-                    float maleBAC = previousBAC + BAC;
-                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
-                    _bacLabel.text = calculatedBAC;
-                    self.pastDate = now;
-                    
-                }
-                if (_beerSize.selectedSegmentIndex == 1) {
-                    
-                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 20) * 1.2)/(0.58 * (Weight/2.2))) - (0.013 * 0);
-                    float maleBAC = previousBAC + BAC;
-                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
-                    _bacLabel.text = calculatedBAC;
-                    self.pastDate = now;
-                }
-                if (_beerSize.selectedSegmentIndex == 2) {
-                    
-                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 40) * 1.2)/(0.58 * (Weight/2.2))) - (0.013 * 0);
-                    float maleBAC = previousBAC + BAC;
-                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
-                    _bacLabel.text = calculatedBAC;
-                    self.pastDate = now;
-                }
-                if (_beerSize.selectedSegmentIndex == 3) {
-                    
-                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 1.5) * 1.2)/(0.58 * (Weight/2.2))) - (0.013 * 0);
-                    float maleBAC = previousBAC + BAC;
-                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
-                    _bacLabel.text = calculatedBAC;
-                    self.pastDate = now;
-                }
-
-            }
-        }
-        if (_poundOrKilogram.selectedSegmentIndex == 1){
-            if (hoursBetweenDates > 0) {
-                if (_beerSize.selectedSegmentIndex == 0) {
-                    
-                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 12) * 1.2)/(0.58 * (Weight))) - (0.013 * hoursBetweenDates);
-                    float maleBAC = previousBAC + BAC;
-                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
-                    _bacLabel.text = calculatedBAC;
-                    self.pastDate = now;
-                    
-                }
-                if (_beerSize.selectedSegmentIndex == 1) {
-                    
-                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 20) * 1.2)/(0.58 * (Weight))) - (0.013 * hoursBetweenDates);
-                    float maleBAC = previousBAC + BAC;
-                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
-                    _bacLabel.text = calculatedBAC;
-                    self.pastDate = now;
-                }
-                if (_beerSize.selectedSegmentIndex == 2) {
-                    
-                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 40) * 1.2)/(0.58 * (Weight))) - (0.013 * hoursBetweenDates);
-                    float maleBAC = previousBAC + BAC;
-                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
-                    _bacLabel.text = calculatedBAC;
-                    self.pastDate = now;
-                }
-                if (_beerSize.selectedSegmentIndex == 3) {
-                    
-                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 1.5) * 1.2)/(0.58 * (Weight/2.2))) - (0.013 * 0);
-                    float maleBAC = previousBAC + BAC;
-                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
-                    _bacLabel.text = calculatedBAC;
-                    self.pastDate = now;
-                }
-                
-            }
-            else{
-                if (_beerSize.selectedSegmentIndex == 0) {
-                    
-                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 12) * 1.2)/(0.58 * (Weight))) - (0.013 * 0);
-                    float maleBAC = previousBAC + BAC;
-                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
-                    _bacLabel.text = calculatedBAC;
-                    self.pastDate = now;
-                    
-                }
-                if (_beerSize.selectedSegmentIndex == 1) {
-                    
-                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 20) * 1.2)/(0.58 * (Weight))) - (0.013 * 0);
-                    float maleBAC = previousBAC + BAC;
-                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
-                    _bacLabel.text = calculatedBAC;
-                    self.pastDate = now;
-                }
-                if (_beerSize.selectedSegmentIndex == 2) {
-                    
-                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 40) * 1.2)/(0.58 * (Weight))) - (0.013 * 0);
-                    float maleBAC = previousBAC + BAC;
-                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
-                    _bacLabel.text = calculatedBAC;
-                    self.pastDate = now;
-                }
-                if (_beerSize.selectedSegmentIndex == 3) {
-                    
-                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 1.5) * 1.2)/(0.58 * (Weight/2.2))) - (0.013 * 0);
-                    float maleBAC = previousBAC + BAC;
-                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
-                    _bacLabel.text = calculatedBAC;
-                    self.pastDate = now;
-                }
-            }
-        }
-        float previousBAC = [_bacLabel.text floatValue];
+    
+    
+    if (_MALE == 1) {
+        _rateOfElimination = .015;
+        _WaterConst = .58;
     }
-    if (_maleOrFemale.selectedSegmentIndex == 1) {
-        if (_poundOrKilogram.selectedSegmentIndex == 0) {
-            if (hoursBetweenDates > 0) {
-                if (_beerSize.selectedSegmentIndex == 0) {
-                    
-                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 12) * 1.2)/(0.49 * (Weight/2.2))) - (0.014 * hoursBetweenDates);
-                    float maleBAC = previousBAC + BAC;
-                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
-                    _bacLabel.text = calculatedBAC;
-                    self.pastDate = now;
-                    
-                }
-                if (_beerSize.selectedSegmentIndex == 1) {
-                    
-                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 20) * 1.2)/(0.49 * (Weight/2.2))) - (0.014 * hoursBetweenDates);
-                    float maleBAC = previousBAC + BAC;
-                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
-                    _bacLabel.text = calculatedBAC;
-                    self.pastDate = now;
-                }
-                if (_beerSize.selectedSegmentIndex == 2) {
-                    
-                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 40) * 1.2)/(0.49 * (Weight/2.2))) - (0.014 * hoursBetweenDates);
-                    float maleBAC = previousBAC + BAC;
-                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
-                    _bacLabel.text = calculatedBAC;
-                    self.pastDate = now;
-                }
-                if (_beerSize.selectedSegmentIndex == 3) {
-                    
-                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 1.5) * 1.2)/(0.58 * (Weight/2.2))) - (0.013 * 0);
-                    float maleBAC = previousBAC + BAC;
-                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
-                    _bacLabel.text = calculatedBAC;
-                    self.pastDate = now;
-                }
-                
-            }
-            else{
-                if (_beerSize.selectedSegmentIndex == 0) {
-                    
-                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 12) * 1.2)/(0.49 * (Weight/2.2))) - (0.014 * 0);
-                    float maleBAC = previousBAC + BAC;
-                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
-                    _bacLabel.text = calculatedBAC;
-                    self.pastDate = now;
-                    
-                }
-                if (_beerSize.selectedSegmentIndex == 1) {
-                    
-                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 20) * 1.2)/(0.49 * (Weight/2.2))) - (0.014 * 0);
-                    float maleBAC = previousBAC + BAC;
-                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
-                    _bacLabel.text = calculatedBAC;
-                    self.pastDate = now;
-                }
-                if (_beerSize.selectedSegmentIndex == 2) {
-                    
-                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 40) * 1.2)/(0.49 * (Weight/2.2))) - (0.014 * 0);
-                    float maleBAC = previousBAC + BAC;
-                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
-                    _bacLabel.text = calculatedBAC;
-                    self.pastDate = now;
-                }
-                if (_beerSize.selectedSegmentIndex == 3) {
-                    
-                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 1.5) * 1.2)/(0.58 * (Weight/2.2))) - (0.013 * 0);
-                    float maleBAC = previousBAC + BAC;
-                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
-                    _bacLabel.text = calculatedBAC;
-                    self.pastDate = now;
-                }
-            }
-        }
-        if (_poundOrKilogram.selectedSegmentIndex == 1){
-            if (hoursBetweenDates > 0) {
-                if (_beerSize.selectedSegmentIndex == 0) {
-                    
-                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 12) * 1.2)/(0.49 * (Weight))) - (0.014 * hoursBetweenDates);
-                    float maleBAC = previousBAC + BAC;
-                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
-                    _bacLabel.text = calculatedBAC;
-                    self.pastDate = now;
-                    
-                }
-                if (_beerSize.selectedSegmentIndex == 1) {
-                    
-                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 20) * 1.2)/(0.49 * (Weight))) - (0.014 * hoursBetweenDates);
-                    float maleBAC = previousBAC + BAC;
-                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
-                    _bacLabel.text = calculatedBAC;
-                    self.pastDate = now;
-                }
-                if (_beerSize.selectedSegmentIndex == 2) {
-                    
-                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 40) * 1.2)/(0.49 * (Weight))) - (0.014 * hoursBetweenDates);
-                    float maleBAC = previousBAC + BAC;
-                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
-                    _bacLabel.text = calculatedBAC;
-                    self.pastDate = now;
-                }
-                if (_beerSize.selectedSegmentIndex == 3) {
-                    
-                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 1.5) * 1.2)/(0.58 * (Weight/2.2))) - (0.013 * 0);
-                    float maleBAC = previousBAC + BAC;
-                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
-                    _bacLabel.text = calculatedBAC;
-                    self.pastDate = now;
-                }
-                
-            }
-            else{
-                if (_beerSize.selectedSegmentIndex == 0) {
-                    
-                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 12) * 1.2)/(0.49 * (Weight))) - (0.014 * 0);
-                    float maleBAC = previousBAC + BAC;
-                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
-                    _bacLabel.text = calculatedBAC;
-                    self.pastDate = now;
-                    
-                }
-                if (_beerSize.selectedSegmentIndex == 1) {
-                    
-                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 20) * 1.2)/(0.49 * (Weight))) - (0.014 * 0);
-                    float maleBAC = previousBAC + BAC;
-                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
-                    _bacLabel.text = calculatedBAC;
-                    self.pastDate = now;
-                }
-                if (_beerSize.selectedSegmentIndex == 2) {
-                    
-                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 40) * 1.2)/(0.49 * (Weight))) - (0.014 * 0);
-                    float maleBAC = previousBAC + BAC;
-                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
-                    _bacLabel.text = calculatedBAC;
-                    self.pastDate = now;
-                }
-                if (_beerSize.selectedSegmentIndex == 3) {
-                    
-                    float BAC = ((.806 * (1.6667 *(.01)* alcContent* 1.5) * 1.2)/(0.58 * (Weight/2.2))) - (0.013 * 0);
-                    float maleBAC = previousBAC + BAC;
-                    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", maleBAC];
-                    _bacLabel.text = calculatedBAC;
-                    self.pastDate = now;
-                }
-            }
-        }
+    else{
+        _rateOfElimination = .017;
+        _WaterConst = .49;
     }
- 
-    float finalBAC = [_bacLabel.text floatValue];
-    if (finalBAC > .5) {
+    
+    Weight = (Weight/ (2.2 - _metric));
+    
+    switch (_beerSize.selectedSegmentIndex) {
+      case 0:
+        _drinkSize = 12;
+        break;
+      case 1:
+        _drinkSize = 20;
+        break;
+      case 2:
+        _drinkSize = 40;
+        break;
+      case 3:
+        _drinkSize = 1.5;
+        break;
+                
+      default:
+        break;
+}
+    
+    if (hoursBetweenDates > 0) {
+    _BAC = ((.806*(1.667*(.01)* alcContent * _drinkSize *1.2))/(_WaterConst * Weight)) - (_rateOfElimination * hoursBetweenDates);
+    }
+    else{
+        _BAC = ((.806*(1.667*(.01)* alcContent * _drinkSize *1.2))/(_WaterConst * Weight)) - (_rateOfElimination * 0);
+    }
+    
+    float totalBAC = _BAC + previousBAC;
+   
+    
+    NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", totalBAC];
+    _bacLabel.text = calculatedBAC;
+    self.pastDate = now;
+    
+    
+    if (totalBAC > .5) {
         
         
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"BAC is too high"
@@ -611,7 +337,7 @@
         [alert show];
     }
     
-    if (finalBAC > .08 & finalBAC < .15) {
+    if (totalBAC > .08 & totalBAC < .15) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Greater than the legal limit"
                                                         message:@"You are not legally allowed to drive"
                                                        delegate:self
@@ -621,7 +347,7 @@
         
     }
     
-    if (finalBAC > .15 & finalBAC < .2) {
+    if (totalBAC > .15 & totalBAC < .2) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Significant Impairment"
                                                         message:@"Dysphoria and Nausea may be present"
                                                        delegate:self
@@ -631,7 +357,7 @@
         
     }
     
-    if (finalBAC > .2 & finalBAC < .25) {
+    if (totalBAC > .2 & totalBAC < .25) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Blackout zone"
                                                         message:@"May need help standing, blackout likely"
                                                        delegate:self
@@ -641,7 +367,7 @@
         
     }
     
-    if (finalBAC > .25 & finalBAC < .5) {
+    if (totalBAC > .25 & totalBAC < .5) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"STOP DRINKING"
                                                         message:@"Al functions impaired, risk of choking"
                                                        delegate:self

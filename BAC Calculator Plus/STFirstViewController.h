@@ -33,6 +33,10 @@
 @property float WineNumber;
 @property float shotNumber;
 @property (weak, nonatomic) NSString *FinalBac;
-@property (weak, nonatomic) NSString *GENDER;
+@property float MALE;
+@property float metric;
+@property float rateOfElimination;
+@property float WaterConst;
+
 
 @end

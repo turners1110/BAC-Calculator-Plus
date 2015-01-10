@@ -10,14 +10,15 @@
 
 @implementation STProfile
 
--(id)initWithWeight:(NSString *)weight forAge:(NSString *)age andGener:(NSString *)gender
+-(id)initWithWeight: (NSString *)weight forAge:(NSString *)age forMetric: (float)metric andMALE: (float)MALE;
 
 {
     self = [super init];
     if (self) {
         _weight = weight;
         _age = age;
-        _gender = gender;
+        _metric = metric;
+        _MALE = MALE;
         
     }
     return self;

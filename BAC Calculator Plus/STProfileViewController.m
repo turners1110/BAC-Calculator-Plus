@@ -47,68 +47,30 @@
     
     NSString *weight = _weightEntered.text;
     float weightVal = [weight floatValue];
+    NSString *age = _ageEntered.text;
+    
+    if (_poundsOrKilograms.selectedSegmentIndex == 0) {
+        _metric = 0;
+    }
+    else{
+        _metric = 1.2;
+    }
     
     
     if (_maleOrFemale.selectedSegmentIndex == 0){
-        
-        if (_poundsOrKilograms.selectedSegmentIndex == 0) {
-            
-            float maleWeight = ((.806 * 1.2)/(0.58 * (weightVal/2.20462)));
-            if (maleWeight < 0) {
-                maleWeight = 0;
-            }
-            _adjustedWeight = [NSString stringWithFormat:@"%f", maleWeight];
-            NSLog(@"pound");
-            
-        }
-        if (_poundsOrKilograms.selectedSegmentIndex == 1) {
-            {
-                float maleWeight = ((.806 * 1.2)/(0.58 * (weightVal)));
-                if (maleWeight < 0) {
-                    maleWeight = 0;
-                }
-                _adjustedWeight = [NSString stringWithFormat:@"%f", maleWeight];
-                NSLog(@"%@", _adjustedWeight);
-            }
-            
-        }
-        
-        
+        _MALE = 1;
     }
-    if (_maleOrFemale.selectedSegmentIndex == 1){
-        
-        if (_poundsOrKilograms.selectedSegmentIndex == 0) {
-            float femaleWeight = ((.806 * 1.2)/(0.49 * (weightVal/2.20462)));
-            if (femaleWeight < 0) {
-                femaleWeight = 0;
-            }
-            _adjustedWeight = [NSString stringWithFormat:@"%f", femaleWeight];
-        }
-        if (_poundsOrKilograms.selectedSegmentIndex == 1) {
-            {
-                float femaleWeight = ((.806 * 1.2)/(0.49 * (weightVal)));
-                if (femaleWeight < 0) {
-                    femaleWeight = 0;
-                }
-                _adjustedWeight = [NSString stringWithFormat:@"%f", femaleWeight];
-                
-            }
-        }
-    
-        }
-    
-
-    NSString *age = _ageEntered.text;
-    if (_maleOrFemale.selectedSegmentIndex == 0) {
-        _gender = @"male";
-    }
-    if (_maleOrFemale.selectedSegmentIndex == 1) {
-        _gender = @"female";
+    else{
+        _MALE = 0;
     }
     
     
+    STProfile *profile = [[STProfile alloc] initWithWeight:weight forAge:age forMetric:_metric andMALE:_MALE];
     
-    STProfile *profile = [[STProfile alloc] initWithWeight:_adjustedWeight forAge:age andGener:_gender];
+    
+    NSLog(@"metric: %f", profile.metric);
+    NSLog(@"male: %f", profile.MALE);
+    NSLog(@"weight %@", profile.weight);
     
     [appDel.Profile addObject:profile];
     [_weightEntered resignFirstResponder];

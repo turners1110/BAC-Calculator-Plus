@@ -17,8 +17,8 @@
 @property (weak, nonatomic) IBOutlet UISegmentedControl *maleOrFemale;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *poundsOrKilograms;
 @property (weak, nonatomic) IBOutlet UITextField *ageEntered;
-@property (strong, nonatomic) NSString *adjustedWeight;
-@property (weak, nonatomic) NSString *gender;
+@property float metric;
+@property float MALE;
 
 - (IBAction)buildProfile:(id)sender;
 - (IBAction)wholeScreenPressed:(id)sender;
