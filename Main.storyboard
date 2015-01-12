@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
     <dependencies>
-        <deployment identifier="iOS"/>
+        <deployment version="2048" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
@@ -75,7 +75,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="u1e-5L-l1D"/>
+                    <tabBarItem key="tabBarItem" title="Simpe" image="first" id="u1e-5L-l1D"/>
                     <connections>
                         <outlet property="BACLabel" destination="WSY-Dd-s3H" id="lIk-IJ-ug5"/>
                         <outlet property="timeEntered" destination="Aug-3r-AI0" id="JuE-3K-d4r"/>
@@ -86,7 +86,7 @@
             </objects>
             <point key="canvasLocation" x="1042" y="-446"/>
         </scene>
-        <!--Item-->
+        <!--Profile Builder-->
         <scene sceneID="xeK-Dt-jkb">
             <objects>
                 <viewController id="cdd-nE-n7I" customClass="STProfileVIewController" sceneMemberID="viewController">
@@ -175,7 +175,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="aqG-Oy-e7r"/>
+                    <tabBarItem key="tabBarItem" title="Profile Builder" image="first" id="aqG-Oy-e7r"/>
                     <navigationItem key="navigationItem" id="Oaf-xd-Xje">
                         <barButtonItem key="rightBarButtonItem" title="Item" id="Zu9-vp-dfB"/>
                     </navigationItem>
@@ -282,7 +282,7 @@
             </objects>
             <point key="canvasLocation" x="1139" y="1473"/>
         </scene>
-        <!--Item-->
+        <!--Advanced-->
         <scene sceneID="WRI-8N-7fi">
             <objects>
                 <viewController id="Ed0-hw-tTD" customClass="STAdvancedBACViewController" sceneMemberID="viewController">
@@ -387,7 +387,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="j6j-Yd-N2o">
-                                <rect key="frame" x="110" y="75" width="107" height="29"/>
+                                <rect key="frame" x="83" y="78" width="154" height="29"/>
                                 <segments>
                                     <segment title="Beer"/>
                                     <segment title="Liquor"/>
@@ -405,14 +405,8 @@
                                     <action selector="resetButton:" destination="Ed0-hw-tTD" eventType="touchUpInside" id="kIE-Ij-cEM"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Drink Size (oz):" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neP-yN-uNB">
-                                <rect key="frame" x="112" y="114" width="97" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7CY-w3-D9T">
-                                <rect key="frame" x="72" y="136" width="183" height="29"/>
+                                <rect key="frame" x="37" y="154" width="247" height="29"/>
                                 <segments>
                                     <segment title="12"/>
                                     <segment title="20"/>
@@ -420,10 +414,16 @@
                                     <segment title="Shot"/>
                                 </segments>
                             </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Drink Size (oz):" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neP-yN-uNB">
+                                <rect key="frame" x="83" y="116" width="154" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="gPV-ve-bHK"/>
+                    <tabBarItem key="tabBarItem" title="Advanced" image="second" id="gPV-ve-bHK"/>
                     <navigationItem key="navigationItem" id="Wy2-N8-5Mz">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="N8g-sL-Rw6"/>
                     </navigationItem>

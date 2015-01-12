@@ -28,8 +28,6 @@
         STAppDelegate *appDel;
     
 }
-
-
 @synthesize brand, keys, filteredNames, searchController, beerValues, beerKeys, wineType, wineKeys, WineValues, wineFiltered;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -44,9 +42,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-   //  appDelegate = [[UIApplication sharedApplication]delegate];
+   
+    // setitng up the alcoghol tables
+    // wine table is currently used for spirits
     UITableView *tableView = (id)[self.view viewWithTag:1];
     UITableView *wineTableVIew = (id)[self.view viewWithTag:3];
     [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
@@ -55,20 +53,28 @@
     brand = [NSDictionary dictionaryWithContentsOfFile:path];
     keys = [[brand allKeys]sortedArrayUsingSelector:@selector(compare:)];
     NSString *winepath = [[NSBundle mainBundle] pathForResource:@"LiquorCheck" ofType:@"plist"];
+    
     wineType = [NSDictionary dictionaryWithContentsOfFile:winepath];
     wineKeys = [[wineType allKeys]sortedArrayUsingSelector:@selector(compare:)];
+    
+    // setup search results
     filteredNames = [[NSMutableArray alloc]init];
     searchController = [[UISearchDisplayController alloc]init];
     searchController.searchResultsDataSource = self;
+    
+    //comparisson valus to get alcohol content
     NSString *path2 = [[NSBundle mainBundle] pathForResource:@"CHECK" ofType:@"plist"];
     NSString *winePath2 = [[NSBundle mainBundle] pathForResource:@"Liquor" ofType:@"plist"];
     beerValues = [NSDictionary dictionaryWithContentsOfFile:path2];
     WineValues = [NSDictionary dictionaryWithContentsOfFile:winePath2];
     beerKeys = [[beerValues allKeys] sortedArrayUsingSelector:@selector(compare:)];
+    
+    //look of the tabl
     tableView.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"MetalTable2.png"]];
     [tableView setSectionIndexColor:[UIColor blueColor]];
     [tableView setSectionIndexBackgroundColor:[UIColor clearColor]];
     
+    //import profile
     appDel = (STAppDelegate *) [[UIApplication sharedApplication] delegate];
     
     [_beerTable reloadData];
@@ -81,13 +87,15 @@
     [super viewDidAppear:animated];
     float last = [appDel.Profile count];
     last--;
+    
+    //imports profile data
     if (last >= 0) {
         STProfile *profile = [appDel.Profile objectAtIndex: last];
         _WEIGHT = profile.weight;
         _MALE = profile.MALE;
         _metric= profile.metric;
-        NSLog(@"%@", profile.weight);
-        //_GENDER = profile.gender;
+        _AGE = [profile.age floatValue];
+    
 
 }
 }
@@ -103,6 +111,8 @@
 
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    
+    //tag 1 is the beer table
     if (tableView.tag == 1) {
         if (_alcoholSelector.selectedSegmentIndex == 0) {
             return [keys count];
@@ -134,6 +144,7 @@
     bgColorView.layer.masksToBounds = YES;
     cell.selectedBackgroundView = bgColorView;
     
+     //tag 1 is the beer table
     if (tableView.tag == 1) {
         if (_alcoholSelector.selectedSegmentIndex == 0) {
             NSString *key = keys[indexPath.section];
@@ -147,8 +158,9 @@
             
             cell.textLabel.text = keyValues[indexPath.row];
         }}
+
+    //search results
     else{
-        
         
         cell.textLabel.text = filteredNames[indexPath.row];
         //            tableView.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"MetalTable2.png"]];
@@ -163,6 +175,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
+     //tag 1 is the beer table
     if (tableView.tag == 1) {
         if (_alcoholSelector.selectedSegmentIndex == 0) {
             NSString *key = keys[section];
@@ -228,9 +241,6 @@
             else{
                 [filteredNames addObjectsFromArray:winematches];
             }
-            
-            
-            
         }
     }
     return YES;
@@ -269,19 +279,43 @@
     }
 }
 
+//calculating BAC from alcohol inforation
 - (IBAction)drinkPressed:(id)sender {
-    NSLog(@"%lu", (unsigned long)filteredNames.count);
-    NSDate * now = [NSDate date];
     
+    // alerts user if there has not been a profile created
+    if (_WEIGHT.length < 1) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Profile Created"
+                                                        message:@"Enter a Profile in the profile tab"
+                                                       delegate:self
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles: nil];
+        [alert show];
+    }
+    
+    //alerts user if they are under 21
+    if (_WEIGHT.length > 0 && _AGE < 21) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Invalid Age"
+                                                        message:@"You must be over 21 to legally drink"
+                                                       delegate:self
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles: nil];
+        [alert show];
+    }
+    
+    
+    // get current date to factor in time of drinking
+    
+    NSDate * now = [NSDate date];
     NSTimeInterval distanceBetweenDates = [now timeIntervalSinceDate:self.pastDate];
     double secondsInAnHour = 3600;
     float hoursBetweenDates = distanceBetweenDates / secondsInAnHour;
+    
+    // access information to run BAC calculation
     float previousBAC = [_bacLabel.text floatValue];
     float Weight = [_WEIGHT floatValue];
-    
     float alcContent = [_alcoholContent floatValue];
     
-    
+    //gender identifier male = 1 female = 0
     if (_MALE == 1) {
         _rateOfElimination = .015;
         _WaterConst = .58;
@@ -291,8 +325,10 @@
         _WaterConst = .49;
     }
     
+    //access weight and factor inunit type
     Weight = (Weight/ (2.2 - _metric));
     
+    //size of drink based on what the user selected
     switch (_beerSize.selectedSegmentIndex) {
       case 0:
         _drinkSize = 12;
@@ -311,23 +347,28 @@
         break;
 }
     
+    //for the first drink where no timepassed is 0:
     if (hoursBetweenDates > 0) {
     _BAC = ((.806*(1.667*(.01)* alcContent * _drinkSize *1.2))/(_WaterConst * Weight)) - (_rateOfElimination * hoursBetweenDates);
     }
+    
+    //for any subsequent drink:
     else{
         _BAC = ((.806*(1.667*(.01)* alcContent * _drinkSize *1.2))/(_WaterConst * Weight)) - (_rateOfElimination * 0);
     }
     
+    //Include previous BAC before drink (time factored in in the formula
+    
     float totalBAC = _BAC + previousBAC;
    
-    
     NSString *calculatedBAC = [[NSString alloc] initWithFormat: @"%.3f", totalBAC];
     _bacLabel.text = calculatedBAC;
+    
+    // setting the "past date to be used for next drink
     self.pastDate = now;
     
-    
+    //alert messages dependning on the BAC level
     if (totalBAC > .5) {
-        
         
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"BAC is too high"
                                                         message:@"Please enter a realistic amount"
@@ -394,6 +435,8 @@
     
 }
 
+//button to check the status of their BAC without consuming a beverage
+
 - (IBAction)checkBAC:(id)sender {
     NSDate * now = [NSDate date];
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
@@ -408,6 +451,8 @@
     
     float finalBAC = [calculatedBAC floatValue];
     
+    
+    //alert messages
     if (finalBAC > .5) {
         
         
@@ -462,6 +507,8 @@
     _bacLabel.text = calculatedBAC;
     self.pastDate = now;
 }
+
+//sets the BAC back to zero
 - (IBAction)resetButton:(id)sender {
     NSDate * now = [NSDate date];
     _bacLabel.text = @"0.00";

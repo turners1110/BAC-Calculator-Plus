@@ -37,6 +37,7 @@
 @property float rateOfElimination;
 @property float WaterConst;
 @property float BAC;
+@property float AGE;
 @property (strong, nonatomic) NSString* WEIGHT;
 @property float MALE;
 

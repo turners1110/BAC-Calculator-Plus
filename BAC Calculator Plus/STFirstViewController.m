@@ -33,8 +33,6 @@
 }
 
 
-
-
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
     if(component== 0){
     return [_beerCount count];
@@ -67,9 +65,11 @@
     _wineCount = @[@"0", @"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9", @"10", @"11", @"12", @"13", @"14", @"15", @"16", @"17", @"18", @"19", @"20", @"21", @"22", @"23", @"24", @"25"];
     _shotCount = @[@"0", @"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9", @"10", @"11", @"12", @"13", @"14", @"15", @"16", @"17", @"18", @"19", @"20", @"21", @"22", @"23", @"24", @"25"];
     
-    appDel = (STAppDelegate *) [[UIApplication sharedApplication] delegate];
+    //calling app delegate to access profile
     
-//    profvc = (STProfileVIewController *) [[UIApplication sharedApplication] delegate];
+    appDel = (STAppDelegate *) [[UIApplication sharedApplication] delegate];
+   
+    
    
 }
 
@@ -80,13 +80,13 @@
     if (last >= 0) {
         STProfile *profile = [appDel.Profile objectAtIndex: last];
         _WEIGHT = profile.weight;
+        _AGE = [profile.age floatValue];
         NSLog(@"%@", profile.weight);
         _MALE = profile.MALE;
         _metric= profile.metric;
+    
     }
-    
-    
-    
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -123,14 +123,41 @@
 
 - (IBAction)malePressed:(id)sender {
     
+    //if no available weight it means the user did not enter a profile
+    //show alert
+    if (_WEIGHT.length < 1) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Profile Created"
+                                                        message:@"Enter a Profile in the profile tab"
+                                                       delegate:self
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles: nil];
+        [alert show];
+    }
+    
+    //alert if user is under 21
+    if (_WEIGHT.length > 0 && _AGE < 21) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Invalid Age"
+                                                        message:@"You must be over 21 to legally drink"
+                                                       delegate:self
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles: nil];
+        [alert show];
+    }
+    
+    // Getting the total number of drinks
+    
     float beerNumber = [_beersEntered floatValue];
     float wineNumber = [_winesEntered floatValue];
     float shotNumber = [_shotsEntered floatValue];
     float drinkNumber = beerNumber + wineNumber + shotNumber;
+    
+    //time drinking
     float time = [_timeEntered.text floatValue];
     
+    //weight
     float weight = [_WEIGHT floatValue];
     
+    //gender and related factors
     if (_MALE == 1) {
         _rateOfElimination = .015;
         _WaterConst = .58;
@@ -140,19 +167,20 @@
         _WaterConst = .49;
     }
 
-    
+    //BAC formula
     float BAC =((.806* drinkNumber *1.2))/(_WaterConst * weight) - (_rateOfElimination * time);
     
-    
-    
-    
     _FinalBac = [NSString stringWithFormat:@"%.3f", BAC];
+
     
+    //Different alert messeges
     float finalBAC = [_FinalBac floatValue];
     
     if (finalBAC > .5) {
+     
         
-    
+
+        
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"BAC is too high"
                                                     message:@"Please enter a realistic amount"
                                                    delegate:self
@@ -201,67 +229,9 @@
         
     }
     
+    //make the BAC appear
     
     [_BACLabel setText:_FinalBac];
-    
-    
-    
-    
-    
-    
-//    if (_maleOrFemale.selectedSegmentIndex == 0){
-//    
-//    float weight = [_WEIGHT floatValue];
-//        if (_poundOrKilograms.selectedSegmentIndex == 0) {
-//            float maleBAC = ((.806 * drinkNumber * 1.2)/(0.58 * (weight/2.2))) - (0.013 * time);
-//            if (maleBAC < 0) {
-//                maleBAC = 0;
-//            }
-//            NSString *maleBACDisplay = [NSString stringWithFormat:@"%.3f", maleBAC];
-//            [_BACLabel setText:maleBACDisplay];
-//    
-//        }
-//        if (_poundOrKilograms.selectedSegmentIndex == 1) {
-//            {
-//            float maleBAC = ((.806 * drinkNumber * 1.2)/(0.58 * (weight))) - (0.013 * time);
-//            if (maleBAC < 0) {
-//                maleBAC = 0;
-//            }
-//            NSString *maleBACDisplay = [NSString stringWithFormat:@"%.3f", maleBAC];
-//            [_BACLabel setText:maleBACDisplay];
-//
-//        }
-//
-//        }
-//    
-//    
-//    }
-//    if (_maleOrFemale.selectedSegmentIndex == 1){
-//        
-//        
-//        float weight = [_WEIGHT floatValue];
-//        if (_poundOrKilograms.selectedSegmentIndex == 0) {
-//            float maleBAC = ((.806 * drinkNumber * 1.2)/(0.49 * (weight/2.2))) - (0.014 * time);
-//            if (maleBAC < 0) {
-//                maleBAC = 0;
-//            }
-//            NSString *maleBACDisplay = [NSString stringWithFormat:@"%.3f", maleBAC];
-//            [_BACLabel setText:maleBACDisplay];
-//        }
-//        if (_poundOrKilograms.selectedSegmentIndex == 1) {
-//            {
-//                float maleBAC = ((.806 * drinkNumber * 1.2)/(0.49 * (weight))) - (0.014 * time);
-//                if (maleBAC < 0) {
-//                    maleBAC = 0;
-//                }
-//                NSString *maleBACDisplay = [NSString stringWithFormat:@"%.3f", maleBAC];
-//                [_BACLabel setText:maleBACDisplay];
-//                
-//            }
-//            
-//        }
-//        
-//    }
 }
 
 - (IBAction)wholeScreen:(id)sender {

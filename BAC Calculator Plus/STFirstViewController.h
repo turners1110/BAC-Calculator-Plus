@@ -34,6 +34,7 @@
 @property float shotNumber;
 @property (weak, nonatomic) NSString *FinalBac;
 @property float MALE;
+@property float AGE;
 @property float metric;
 @property float rateOfElimination;
 @property float WaterConst;

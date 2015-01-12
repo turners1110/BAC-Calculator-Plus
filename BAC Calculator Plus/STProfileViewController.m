@@ -17,7 +17,6 @@
     STAppDelegate *appDel;
     
 }
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -46,16 +45,18 @@
 - (IBAction)buildProfile:(id)sender {
     
     NSString *weight = _weightEntered.text;
-    float weightVal = [weight floatValue];
     NSString *age = _ageEntered.text;
     
+    //metric system or not
     if (_poundsOrKilograms.selectedSegmentIndex == 0) {
         _metric = 0;
     }
+    // returns 1.2 to be used in BAC formula [ Weight/2.2 for pounds and Weight/(2.2 - 1.2) for kg
     else{
         _metric = 1.2;
     }
     
+    //dummy variable indicating male or female
     
     if (_maleOrFemale.selectedSegmentIndex == 0){
         _MALE = 1;
@@ -64,18 +65,20 @@
         _MALE = 0;
     }
     
+    //making the profile from the given information
     
     STProfile *profile = [[STProfile alloc] initWithWeight:weight forAge:age forMetric:_metric andMALE:_MALE];
     
-    
-    NSLog(@"metric: %f", profile.metric);
-    NSLog(@"male: %f", profile.MALE);
-    NSLog(@"weight %@", profile.weight);
+    //Optional check to see what gets passed:
+    //NSLog(@"metric: %f", profile.metric);
+    //NSLog(@"male: %f", profile.MALE);
+    //NSLog(@"weight %@", profile.weight);
     
     [appDel.Profile addObject:profile];
     [_weightEntered resignFirstResponder];
     [_ageEntered resignFirstResponder];
 
+    //alerts if the user forgot to enter a weight
     if (_weightEntered.text.length < 1) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Please enter a weight"
                                                         message:@"Without a weight, you will be unable to check your BAC"
@@ -85,6 +88,7 @@
         [alert show];
 
     }
+    // alerts if the user forgot to enter an age
     else if (_ageEntered.text.length < 1) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Please enter an age"
                                                         message:@""
@@ -95,9 +99,7 @@
 
     }
     
-    
-    
-    
+    //indicatio the profile has been created
     else {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Profile has been created"
                                                     message:@"Proceed by accessing other tabs"
@@ -109,11 +111,12 @@
 
 }
 }
-//I want to be able to switch to next tab, or even better would be to have this view controller be the main tab anf it would be a forced advance into the tab view controller, maybe not, Ill see.
+
 - (void)alertView:(UIAlertView *)alert didDismissWithButtonIndex:(NSInteger)buttonIndex {
     // the user clicked OK
     if (buttonIndex == 1) {
         // do something here...
+        //currently only uses one button
         NSLog(@"it Worked!");
 //        [self performSegueWithIdentifier:@"a" sender:nil];
         

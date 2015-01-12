@@ -20,7 +20,6 @@
     CLGeocoder *geocoder;
     CLPlacemark *placemark;
     
-    
 }
 
 
@@ -38,7 +37,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	// enable location manager and add any view to this viewcontroller
+    
+   
     [self.mapView setDelegate:self];
     [self.mapViewFood setDelegate:self];
     [self.mapViewBar setDelegate:self];
@@ -46,9 +47,9 @@
     _mapViewFood.showsUserLocation=YES;
     _mapViewBar.showsUserLocation=YES;
     locationManager = [[CLLocationManager alloc] init];
-    locationManager = [[CLLocationManager alloc] init];
     geocoder = [[CLGeocoder alloc] init];
     locationManager.delegate = self;
+    [locationManager requestWhenInUseAuthorization];
     locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     [locationManager startUpdatingLocation];
     
@@ -67,34 +68,32 @@
     }
 
 
-
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
 {
+    
     CLLocation *currentLocation = newLocation;
     
-//    double miles = 12.0;
-//    double scalingFactor =
-//    ABS( cos(2 * M_PI * newLocation.coordinate.latitude /360.0) );
-//    
-//    MKCoordinateSpan span;
-//    span.latitudeDelta = miles/69.0;
-//    span.longitudeDelta = miles/( scalingFactor*69.0 );
-//    
-//    MKCoordinateRegion region;
-//    region.span = span;
-//    region.center = newLocation.coordinate;
-//    
-//    [self.mapView setRegion:region animated:YES];
-//    self.mapView.showsUserLocation = YES;
-//    
+    
+    //size of map view
+    
+    double miles = 12.0;
+    double scalingFactor =
+    ABS( cos(2 * M_PI * newLocation.coordinate.latitude /360.0) );
+    
+    MKCoordinateSpan span;
+    span.latitudeDelta = miles/69.0;
+    span.longitudeDelta = miles/( scalingFactor*69.0 );
+    
+    MKCoordinateRegion region;
+    region.span = span;
+    region.center = newLocation.coordinate;
+    
+    [self.mapView setRegion:region animated:YES];
+    self.mapView.showsUserLocation = YES;
     
     
-    
-    
-    
-    
-    
-    
+// The text that appears to indicate current location
+
     [geocoder reverseGeocodeLocation:currentLocation completionHandler:^(NSArray *placemarks, NSError *error) {
         if (error == nil && [placemarks count] > 0) {
             placemark = [placemarks lastObject];
@@ -109,6 +108,8 @@
         }
     }];
 }
+
+
 -(void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
 {
     MKCoordinateRegion mapRegion;
@@ -119,15 +120,21 @@
     [mapView setRegion:mapRegion animated: YES];
 }
 
+//taxi button
 - (IBAction)mapButtonPressed:(id)sender {
-    [_mapView setHidden:NO];
+    
+    //hide other views
+   [_mapView setHidden:NO];
    [_mapViewFood setHidden:YES];
-    [_mapViewBar setHidden:YES];
-//   [_mapView setCenterCoordinate: _mapView.userLocation.coordinate animated:YES];
+   [_mapViewBar setHidden:YES];
+    
+    //other details about taxi button
     MKCoordinateSpan span;
     span.latitudeDelta = 0.005;
     span.longitudeDelta = 0.005;
     MKLocalSearchRequest *request = [[MKLocalSearchRequest alloc] init];
+    
+    //search query
     request.naturalLanguageQuery = @"Taxi";
     request.region = _mapView.region;
     MKLocalSearch *search = [[MKLocalSearch alloc]initWithRequest:request];
@@ -150,7 +157,8 @@
 
 - (IBAction)foodButton:(id)sender {
 
-//    [_mapViewFood setCenterCoordinate: _mapViewFood.userLocation.coordinate animated:YES];
+   //hide other views
+    
     [_mapView setHidden:YES];
     [_mapViewFood setHidden:NO];
     [_mapViewBar setHidden:YES];
@@ -158,6 +166,8 @@
    span.latitudeDelta = 0.005;
     span.longitudeDelta = 0.005;
     MKLocalSearchRequest *request = [[MKLocalSearchRequest alloc] init];
+    
+    //search query
    request.naturalLanguageQuery = @"Fast Food";
     request.region = _mapViewFood.region;
    MKLocalSearch *search = [[MKLocalSearch alloc]initWithRequest:request];
@@ -169,13 +179,12 @@
             annotation.title = result.name;
             annotation.subtitle = result.phoneNumber;
            [_mapViewFood addAnnotation:annotation]; } }];
-//   [_mapViewFood setCenterCoordinate: _mapViewFood.userLocation.coordinate animated:YES];
 
 }
 
 - (IBAction)barButton:(id)sender {
     
-//    [_mapViewFood setCenterCoordinate: _mapViewFood.userLocation.coordinate animated:YES];
+   //hide other views
     [_mapView setHidden:YES];
     [_mapViewFood setHidden:YES];
     [_mapViewBar setHidden:NO];
@@ -183,6 +192,8 @@
     span.latitudeDelta = 0.005;
     span.longitudeDelta = 0.005;
     MKLocalSearchRequest *request = [[MKLocalSearchRequest alloc] init];
+    
+    //search query
     request.naturalLanguageQuery = @"Bar";
     request.region = _mapViewBar.region;
     MKLocalSearch *search = [[MKLocalSearch alloc]initWithRequest:request];
@@ -194,7 +205,8 @@
             annotation.title = result.name;
             annotation.subtitle = result.phoneNumber;
             [_mapViewBar addAnnotation:annotation]; } }];
-//    [_mapViewBar setCenterCoordinate: _mapViewFood.userLocation.coordinate animated:YES];
+   
+    
 }
 -(MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation{
     
@@ -203,12 +215,17 @@
     }
     
     MKPinAnnotationView *pin = [[MKPinAnnotationView alloc]initWithAnnotation:annotation reuseIdentifier:@"current"];
+    
+    //pin details
     pin.pinColor = MKPinAnnotationColorRed;
     pin.backgroundColor = [UIColor clearColor];
     pin.draggable = NO;
     pin.highlighted = YES;
     pin.animatesDrop = TRUE;
     pin.canShowCallout = YES;
+    
+    //selects which image to pair with phone number
+    
     if (mapView == _mapView) {
         UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Taxi.png"]];
         pin.leftCalloutAccessoryView = imageView;
@@ -223,8 +240,6 @@
     }
     
     
-    
-    
     else {
         UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"FastFood.png"]];
         pin.leftCalloutAccessoryView = imageView;
@@ -233,22 +248,15 @@
     }
     
 }
-//- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view{
-//    
-//    NSString *call = view.annotation.subtitle;
-//    NSLog(@"%@", call);
-//    NSString *CallNumber = [NSString stringWithFormat: @"telprompt://%@", call];
-//    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:CallNumber]];
-//    
-//}
-//
+
+
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view
-calloutAccessoryControlTapped:(UIControl *)control
-{
-//
-NSString *call = view.annotation.subtitle;
-NSString *CallNumber = [NSString stringWithFormat: @"telprompt://%@", call];
-[[UIApplication sharedApplication] openURL:[NSURL URLWithString:CallNumber]];
+    calloutAccessoryControlTapped:(UIControl *)control
+    {
+    //
+    NSString *call = view.annotation.subtitle;
+    NSString *CallNumber = [NSString stringWithFormat: @"telprompt://%@", call];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:CallNumber]];
 
 
 }
@@ -258,7 +266,7 @@ NSString *CallNumber = [NSString stringWithFormat: @"telprompt://%@", call];
 - (IBAction)currentLocationButton:(id)sender {
         [_mapViewBar setCenterCoordinate: _mapViewFood.userLocation.coordinate animated:YES];
         [_mapViewFood setCenterCoordinate: _mapViewFood.userLocation.coordinate animated:YES];
-    [_mapView setCenterCoordinate: _mapViewFood.userLocation.coordinate animated:YES];
+        [_mapView setCenterCoordinate: _mapViewFood.userLocation.coordinate animated:YES];
     
 }
 @end
